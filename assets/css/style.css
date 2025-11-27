@@ -142,6 +142,114 @@ body.nav-open::after {
   box-shadow: 0 20px 40px rgba(37, 211, 102, 0.45);
 }
 
+/* CTA cards */
+.cta-section {
+  background: linear-gradient(135deg, rgba(245, 243, 255, 0.65), rgba(255, 228, 239, 0.65));
+}
+
+.cta-card {
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  border: 1px solid rgba(196, 199, 242, 0.45);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: relative;
+}
+
+.cta-card::after {
+  content: '';
+  position: absolute;
+  inset: 1rem;
+  border-radius: 2rem;
+  border: 1px dashed rgba(196, 199, 242, 0.35);
+  pointer-events: none;
+}
+
+.cta-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  z-index: 1;
+}
+
+.cta-badge {
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(245, 243, 255, 0.9);
+  color: var(--brand-deep);
+}
+
+.cta-card .cta-copy {
+  z-index: 1;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .cta-actions {
+    flex-direction: row;
+  }
+}
+
+.cta-primary,
+.cta-secondary {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.95rem 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-primary {
+  background-image: var(--brand-gradient);
+  color: var(--brand-deep);
+  box-shadow: 0 15px 35px rgba(31, 2, 89, 0.2);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 45px rgba(31, 2, 89, 0.3);
+}
+
+.cta-primary--whatsapp {
+  background-image: none;
+  background-color: var(--cta-green);
+  color: #ffffff;
+  box-shadow: 0 18px 35px rgba(37, 211, 102, 0.35);
+}
+
+.cta-primary--whatsapp:hover {
+  box-shadow: 0 25px 45px rgba(37, 211, 102, 0.45);
+}
+
+.cta-secondary {
+  border: 1px solid rgba(31, 2, 89, 0.2);
+  color: var(--brand-deep);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.12);
+}
+
 /* Cards */
 .card-hover {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
