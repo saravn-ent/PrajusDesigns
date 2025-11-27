@@ -13,7 +13,15 @@
       --cta-green:#25D366;
     }
     .gallery-btn{background:white;border-radius:9999px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(15,23,42,0.12);} 
-    .img-placeholder{background:linear-gradient(135deg,#fff7ed,#fee2e2);border-radius:1.5rem;height:210px;width:100%;}
+    .img-placeholder{
+      border-radius:1.5rem;
+      height:210px;
+      width:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      background:#fff7ed;
+    }
     @media(max-width:640px){.img-placeholder{height:160px;}}
   </style>
 </head>
@@ -54,35 +62,60 @@
         <div id="gallery" class="overflow-hidden">
           <div class="flex gap-6 w-max">
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" role="img" aria-label="Temple back motif placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/27443639/pexels-photo-27443639.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Temple-inspired bridal back motif with kemp stones"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Temple back motif</div>
                 <div class="text-sm text-gray-500">Kemp stones + zari shading</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Shoulder trail placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/7686314/pexels-photo-7686314.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Shoulder trail sleeves cascading with pearls and cutdana"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Shoulder trail sleeves</div>
                 <div class="text-sm text-gray-500">Cutdana + pearl strings</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Waist belt placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/6387657/pexels-photo-6387657.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Bridal kamarband panel with layered zari couching"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Kamarband panel</div>
                 <div class="text-sm text-gray-500">Layered zari couching</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Veil border placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/8886933/pexels-photo-8886933.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="French knot veil border with sequins and pearl edging"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Veil border</div>
                 <div class="text-sm text-gray-500">French knots + sequins</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Back tassel placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/9317122/pexels-photo-9317122.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Handcrafted silk tassel set with kundan drops"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Heirloom tassel set</div>
                 <div class="text-sm text-gray-500">Custom silk + beads</div>

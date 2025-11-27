@@ -14,7 +14,15 @@
       --whatsapp-green:#25D366;
     }
     .gallery-btn { background:white; border-radius:9999px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(15,23,42,0.08); border:1px solid rgba(0,0,0,0.05); }
-    .img-placeholder { background:linear-gradient(180deg,#fdf2f8,#fae8ff); border-radius:1rem; height:190px; width:100%; }
+    .img-placeholder {
+      border-radius:1rem;
+      height:190px;
+      width:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      background:#fdf2f8;
+    }
     @media(max-width:640px){ .img-placeholder{ height:150px; } }
   </style>
 </head>
@@ -54,35 +62,60 @@
         <div id="gallery" class="overflow-hidden">
           <div class="flex gap-6 w-max">
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Neckline scallop border placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/2933639/pexels-photo-2933639.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Scalloped zari border finished with cutdana edging"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
                 <div class="font-semibold">Scallop neck border</div>
                 <div class="text-sm text-gray-500">Cutdana + bead combo</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Leaf vines placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/4614249/pexels-photo-4614249.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Anchor shaded leaf vines stitched on ivory net"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
                 <div class="font-semibold">Leaf vines</div>
                 <div class="text-sm text-gray-500">Anchor thread shading</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Butta scatter placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/6358785/pexels-photo-6358785.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Pearl and sequin buttas scattered across bridal tulle"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
                 <div class="font-semibold">Butta scatter</div>
                 <div class="text-sm text-gray-500">Pearl + sequin clusters</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Sleeve cuff work placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/6045282/pexels-photo-6045282.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Gold edged sleeve cuff with neat zari couching"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
                 <div class="font-semibold">Sleeve cuff detailing</div>
                 <div class="text-sm text-gray-500">Single-line zari stitch</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Back motif placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/25489120/pexels-photo-25489120.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Symmetrical raw silk back motif finished with kundan tassels"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
                 <div class="font-semibold">Back motif</div>
                 <div class="text-sm text-gray-500">Simple peacock patch</div>

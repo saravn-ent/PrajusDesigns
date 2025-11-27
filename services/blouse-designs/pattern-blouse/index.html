@@ -42,12 +42,15 @@
       box-shadow: 0 8px 24px rgba(80,12,89,0.18);
     }
 
-    /* gallery placeholder look */
+    /* gallery visuals */
     .img-placeholder{
-      background: linear-gradient(180deg,#f3f4f6,#e9ecef);
       border-radius:0.75rem;
       height:160px;
       width:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      background:#f9fafb;
     }
 
     /* small screens tweak */
@@ -130,55 +133,85 @@
           <div class="flex gap-6 w-max" style="will-change:transform">
             <!-- item 1 -->
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Gold motif blouse placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/17879064/pexels-photo-17879064.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Pearl-collared lace blouse showing delicate cutwork pattern"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Gold motif blouse</div>
-                <div class="text-sm text-gray-500">Silk saree match</div>
+                <div class="font-semibold">Lace collar detail</div>
+                <div class="text-sm text-gray-500">Vintage-inspired edge</div>
               </figcaption>
             </figure>
 
             <!-- item 2 -->
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Temple border motif placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/13623433/pexels-photo-13623433.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Hand-embroidered white blouse on hanger with geometric yoke"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Temple border motif</div>
-                <div class="text-sm text-gray-500">Traditional look</div>
+                <div class="font-semibold">Display embroidery</div>
+                <div class="text-sm text-gray-500">Ready-to-try sample</div>
               </figcaption>
             </figure>
 
             <!-- item 3 -->
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Contemporary paisley placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/14517185/pexels-photo-14517185.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Bright pink blouse with multicolor floral threadwork"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Contemporary paisley</div>
-                <div class="text-sm text-gray-500">Fusion style</div>
+                <div class="font-semibold">Floral threadwork</div>
+                <div class="text-sm text-gray-500">Festive palette</div>
               </figcaption>
             </figure>
 
             <!-- item 4 -->
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Thread motif placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/7716936/pexels-photo-7716936.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Minimal white blouse back finished with satin ribbon tie"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Thread motif work</div>
-                <div class="text-sm text-gray-500">Lightweight lining</div>
+                <div class="font-semibold">Satin tie-up back</div>
+                <div class="text-sm text-gray-500">Clean finishing</div>
               </figcaption>
             </figure>
 
             <!-- item 5 -->
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Mirror & patch detail placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/6966105/pexels-photo-6966105.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Floral print blouse paired with layered amber necklace detail"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Mirror & patch detail</div>
-                <div class="text-sm text-gray-500">Festive ensemble</div>
+                <div class="font-semibold">Layered neckline</div>
+                <div class="text-sm text-gray-500">Statement styling</div>
               </figcaption>
             </figure>
 
             <!-- item 6 -->
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Minimal motif placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/11829097/pexels-photo-11829097.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Boho white blouse featuring colourful cross-stitch sleeves"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Minimal motif blouse</div>
-                <div class="text-sm text-gray-500">Office-wear saree</div>
+                <div class="font-semibold">Cross-stitch sleeves</div>
+                <div class="text-sm text-gray-500">Boho inspiration</div>
               </figcaption>
             </figure>
 

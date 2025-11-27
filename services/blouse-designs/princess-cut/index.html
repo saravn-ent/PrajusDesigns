@@ -14,7 +14,15 @@
 			--whatsapp-green:#25D366;
 		}
 		.gallery-btn { background:white; border-radius:9999px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(15,23,42,0.08); border:1px solid rgba(0,0,0,0.05); }
-		.img-placeholder { background:linear-gradient(180deg,#f5f3ff,#e0e7ff); border-radius:0.85rem; height:170px; width:100%; }
+		.img-placeholder {
+			border-radius:0.85rem;
+			height:170px;
+			width:100%;
+			object-fit:cover;
+			object-position:center;
+			display:block;
+			background:#f9fafb;
+		}
 		@media(max-width:640px){ .img-placeholder{ height:140px; } }
 	</style>
 </head>
@@ -54,38 +62,63 @@
 				<div id="gallery" class="overflow-hidden">
 					<div class="flex gap-6 w-max">
 						<figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-							<div class="img-placeholder" role="img" aria-label="Classic princess cut placeholder"></div>
+							<img
+								src="https://images.pexels.com/photos/17040876/pexels-photo-17040876.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+								alt="Structured V-neck princess cut blouse paired with red silk saree"
+								class="img-placeholder"
+								loading="lazy"
+							/>
 							<figcaption class="mt-3">
-								<div class="font-semibold">Classic panel blouse</div>
-								<div class="text-sm text-gray-500">Fits Kanchipuram sarees</div>
+								<div class="font-semibold">Structured V Neck</div>
+								<div class="text-sm text-gray-500">Clean princess panels</div>
 							</figcaption>
 						</figure>
 						<figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-							<div class="img-placeholder" aria-label="Sheer back placeholder"></div>
+							<img
+								src="https://images.pexels.com/photos/11555713/pexels-photo-11555713.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+								alt="Princess cut blouse with sheer yoke and hand beaded neckline"
+								class="img-placeholder"
+								loading="lazy"
+							/>
 							<figcaption class="mt-3">
-								<div class="font-semibold">Sheer back detail</div>
-								<div class="text-sm text-gray-500">Organza + bead drops</div>
+								<div class="font-semibold">Sheer Yoke Finish</div>
+								<div class="text-sm text-gray-500">Crystal neckline beading</div>
 							</figcaption>
 						</figure>
 						<figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-							<div class="img-placeholder" aria-label="Tassel tie placeholder"></div>
+							<img
+								src="https://images.pexels.com/photos/9317100/pexels-photo-9317100.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+								alt="Deep back princess cut blouse finished with button loops"
+								class="img-placeholder"
+								loading="lazy"
+							/>
 							<figcaption class="mt-3">
-								<div class="font-semibold">Low-back tassel tie</div>
-								<div class="text-sm text-gray-500">Haldi ready</div>
+								<div class="font-semibold">Back Button Loops</div>
+								<div class="text-sm text-gray-500">Structured low scoop</div>
 							</figcaption>
 						</figure>
 						<figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-							<div class="img-placeholder" aria-label="Elbow sleeve placeholder"></div>
+							<img
+								src="https://images.pexels.com/photos/8229235/pexels-photo-8229235.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+								alt="Elbow sleeve princess cut blouse with pleated sleeve hem"
+								class="img-placeholder"
+								loading="lazy"
+							/>
 							<figcaption class="mt-3">
-								<div class="font-semibold">Elbow sleeve variation</div>
-								<div class="text-sm text-gray-500">Temple jewellery friendly</div>
+								<div class="font-semibold">Elbow Sleeve Fit</div>
+								<div class="text-sm text-gray-500">Pleated sleeve hem</div>
 							</figcaption>
 						</figure>
 						<figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-							<div class="img-placeholder" aria-label="Princess cut with piping placeholder"></div>
+							<img
+								src="https://images.pexels.com/photos/8819315/pexels-photo-8819315.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+								alt="Mustard princess cut blouse styled with floral saree for haldi"
+								class="img-placeholder"
+								loading="lazy"
+							/>
 							<figcaption class="mt-3">
-								<div class="font-semibold">Contrast piping edges</div>
-								<div class="text-sm text-gray-500">Smart office drape</div>
+								<div class="font-semibold">Haldi Ready Panels</div>
+								<div class="text-sm text-gray-500">Sunny mustard palette</div>
 							</figcaption>
 						</figure>
 					</div>

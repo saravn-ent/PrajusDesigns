@@ -13,7 +13,15 @@
       --cta-green:#25D366;
     }
     .gallery-btn{background:white;border-radius:9999px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(15,23,42,0.1);} 
-    .img-placeholder{background:linear-gradient(135deg,#fee2e2,#e0f2fe);border-radius:1.5rem;height:210px;width:100%;}
+    .img-placeholder{
+      border-radius:1.5rem;
+      height:210px;
+      width:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      background:#fee2e2;
+    }
     @media(max-width:640px){.img-placeholder{height:160px;}}
   </style>
 </head>
@@ -54,35 +62,60 @@
         <div id="gallery" class="overflow-hidden">
           <div class="flex gap-6 w-max">
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" role="img" aria-label="Multi-layer lotus patch placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/8601093/pexels-photo-8601093.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Layered lotus patch sculpted with silk and organza"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Lotus sculpt patch</div>
                 <div class="text-sm text-gray-500">Raw silk + organza padding</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Crystal girdle placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/27155540/pexels-photo-27155540.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Crystal girdle sleeve stacked with cutdana rows"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Crystal girdle sleeve</div>
                 <div class="text-sm text-gray-500">Cutdana grid with mirror drops</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Raised peacock panel placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/9317106/pexels-photo-9317106.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Relief peacock panel highlighted with bead shading"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">5D peacock panel</div>
                 <div class="text-sm text-gray-500">Relief foam + bead shading</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Fringe shoulder patch placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/8750043/pexels-photo-8750043.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Fringed shoulder patch with cascading tassels"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Fringe shoulder patch</div>
                 <div class="text-sm text-gray-500">Layered tassels + sequins</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Patchwork dupatta placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/1376038/pexels-photo-1376038.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Patchwork dupatta border alternating velvet tiles"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Patchwork dupatta border</div>
                 <div class="text-sm text-gray-500">Alternating velvet tiles</div>

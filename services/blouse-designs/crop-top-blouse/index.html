@@ -27,10 +27,13 @@
       border:1px solid rgba(0,0,0,0.04);
     }
     .img-placeholder {
-      background:linear-gradient(180deg,#f4f5fb,#e7e7fa);
       border-radius:0.75rem;
       height:170px;
       width:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      background:#f9fafb;
     }
     @media (max-width:640px){ .img-placeholder{ height:140px; } }
   </style>
@@ -73,38 +76,63 @@
         <div id="gallery" class="overflow-hidden">
           <div class="flex gap-6 w-max">
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" role="img" aria-label="Embroidered bustier placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/24425140/pexels-photo-24425140.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Turquoise mirrorwork crop blouse with scalloped hem and structured bust fit"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Embroidered bustier</div>
-                <div class="text-sm text-gray-500">Bead tassels & mirror pop</div>
+                <div class="font-semibold">Turquoise Mirror Choli</div>
+                <div class="text-sm text-gray-500">Scalloped hem • boned cups</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Cape sleeve crop-top placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/20790057/pexels-photo-20790057.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Red embroidered crop-top blouse styled with floral lehenga for bridal portrait"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Cape sleeve crop blouse</div>
-                <div class="text-sm text-gray-500">Soft organza overlay</div>
+                <div class="font-semibold">Embroidered Bridal Crop</div>
+                <div class="text-sm text-gray-500">Deep V + tassel ties</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Corset detailed crop placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/25489120/pexels-photo-25489120.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Printed crop blouse matched with contrast blue skirt and dupatta for Jaipur shoot"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Corset detailed fit</div>
-                <div class="text-sm text-gray-500">Boning + waist cinch</div>
+                <div class="font-semibold">Printed Co-ord Blouse</div>
+                <div class="text-sm text-gray-500">Contrast skirt pairing</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Peplum crop blouse placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/13860730/pexels-photo-13860730.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Black silk crop blouse with high waist skirt posed near carved doorway"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Peplum crop blouse</div>
-                <div class="text-sm text-gray-500">Pairs with silk saree</div>
+                <div class="font-semibold">Black Silk Separates</div>
+                <div class="text-sm text-gray-500">Minimalist evening set</div>
               </figcaption>
             </figure>
             <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-xl p-4 border shadow-sm">
-              <div class="img-placeholder" aria-label="Sequin party blouse placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/12992587/pexels-photo-12992587.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Green and red crop blouse with structured shoulders for runway look"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-3">
-                <div class="font-semibold">Sequin party blouse</div>
-                <div class="text-sm text-gray-500">Sangeet ready</div>
+                <div class="font-semibold">Runway Shoulder Crop</div>
+                <div class="text-sm text-gray-500">Power sleeves + waist cut</div>
               </figcaption>
             </figure>
           </div>

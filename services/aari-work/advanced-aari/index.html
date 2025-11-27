@@ -14,7 +14,15 @@
       --whatsapp-green:#25D366;
     }
     .gallery-btn{background:white;border-radius:9999px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(15,23,42,0.1);} 
-    .img-placeholder{background:linear-gradient(135deg,#ede9fe,#ffe4e6);border-radius:1.5rem;height:210px;width:100%;}
+    .img-placeholder{
+      border-radius:1.5rem;
+      height:210px;
+      width:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      background:#ede9fe;
+    }
     @media(max-width:640px){.img-placeholder{height:160px;}}
   </style>
 </head>
@@ -55,35 +63,60 @@
         <div id="gallery" class="overflow-hidden">
           <div class="flex gap-6 w-max">
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" role="img" aria-label="Shoulder scallop work placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/13031577/pexels-photo-13031577.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Layered scallop embroidery cascading over the shoulder"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Layered shoulder scallop</div>
                 <div class="text-sm text-gray-500">Mix of zardosi + glass beads</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Mirror-work panel placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/24425140/pexels-photo-24425140.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Mirror work yoke with contrast anchor shading"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Mirror work yoke</div>
                 <div class="text-sm text-gray-500">Hand-cut mirrors, contrast thread</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="3D floral placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/29351977/pexels-photo-29351977.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Reception blouse with layered 3D floral work"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">3D florals</div>
                 <div class="text-sm text-gray-500">Organza petals + pearls</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Cutwork sleeve placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/9317105/pexels-photo-9317105.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Cutwork sleeve finished with crystal edging"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Cutwork sleeves</div>
                 <div class="text-sm text-gray-500">Thread lattice + crystals</div>
               </figcaption>
             </figure>
             <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
-              <div class="img-placeholder" aria-label="Back motif placeholder"></div>
+              <img
+                src="https://images.pexels.com/photos/30641910/pexels-photo-30641910.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=800"
+                alt="Grand back motif framed with tassels and kundan drops"
+                class="img-placeholder"
+                loading="lazy"
+              />
               <figcaption class="mt-4">
                 <div class="font-semibold">Grand back motif</div>
                 <div class="text-sm text-gray-500">Peacock frame with tassels</div>
