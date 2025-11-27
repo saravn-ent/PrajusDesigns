@@ -20,7 +20,7 @@
       <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
         <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
       </a>
-      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-drawer" data-nav-toggle>
         <span class="sr-only">Toggle navigation</span>
         <i class="fas fa-bars"></i>
       </button>
@@ -32,12 +32,26 @@
         <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
       </ul>
     </nav>
-    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
-      <a href="/" class="border-b pb-2">Home</a>
-      <a href="/services/" class="border-b pb-2">Services</a>
-      <a href="/about/" class="border-b pb-2">About</a>
-      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
-      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
+  </div>
+  <div class="mobile-nav-overlay hidden lg:hidden" data-nav-overlay>
+    <div class="mobile-nav-backdrop" data-nav-backdrop></div>
+    <div class="mobile-nav-panel" id="mobile-drawer" data-nav-mobile>
+      <button type="button" class="mobile-nav-close" aria-label="Close menu" data-nav-close>&times;</button>
+      <div class="mobile-nav-links">
+        <a href="/">Home</a>
+        <a href="/services/">Services</a>
+        <a href="/about/">About</a>
+        <a href="/aari-courses/">Courses</a>
+      </div>
+      <div class="mobile-nav-profile">
+        <div class="mobile-nav-photo-frame">
+          <img src="/manjula.jpg" alt="Manjula from Prajus Designs" loading="lazy" decoding="async">
+        </div>
+        <div class="mobile-nav-profile-meta">
+          <p class="mobile-nav-profile-name">Manjula Prabu</p>
+          <p class="mobile-nav-profile-title">Proprietor</p>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -170,6 +184,10 @@
 
 </body>
 </html>
+
+
+
+
 
 
 
