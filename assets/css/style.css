@@ -1,6 +1,6 @@
 :root {
-  --brand-gradient-start: #C4C7F2;
-  --brand-gradient-end: #F2E96B;
+  --brand-gradient-start: #F5F3FF;
+  --brand-gradient-end: #FFE4EF;
   --brand-gradient: linear-gradient(135deg, var(--brand-gradient-start) 0%, var(--brand-gradient-end) 100%);
   --brand-deep: #1D0259;
   --brand-text: #0F172A;
