@@ -5,40 +5,45 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Prajus Designs - Premium Boutique & Aari Studio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --color-primary: #500C59;
-      --color-secondary: #BF637C;
-      --color-accent: #F2E96B;
-      --color-dark: #1D0259;
-      --color-light: #C4C7F2;
-    }
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(80, 12, 89, 0.15); }
-    .btn-primary { background: linear-gradient(135deg, #500C59 0%, #BF637C 100%); transition: all 0.3s; color: white; }
-    .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(80, 12, 89, 0.3); }
-    .float-cta { position: fixed; bottom: 30px; right: 30px; z-index: 40; animation: bounce 2s infinite; }
-    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-  </style>
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body class="bg-white text-gray-800">
 
 <!-- Navbar -->
-<header class="bg-white border-b-2 border-purple-200 sticky top-0 z-50">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <a href="/" class="text-2xl font-bold" style="color: #500C59;">✨ Prajus Designs</a>
-    <ul class="flex gap-8 font-medium text-gray-700">
-      <li><a href="/" class="hover:text-[#BF637C] transition">Home</a></li>
-      <li><a href="/about/" class="hover:text-[#BF637C] transition">About</a></li>
-      <li><a href="/services/" class="hover:text-[#BF637C] transition">Services</a></li>
-      <li><a href="/aari-courses/" class="hover:text-[#BF637C] transition">Courses</a></li>
-    </ul>
-  </nav>
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex items-center justify-between py-4">
+      <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
+        <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
+      </a>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
+        <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
+        <li><a href="/services/" class="hover:text-[#1D0259] transition">Services</a></li>
+        <li><a href="/about/" class="hover:text-[#1D0259] transition">About</a></li>
+        <li><a href="/aari-courses/" class="hover:text-[#1D0259] transition">Courses</a></li>
+        <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
+      <a href="/" class="border-b pb-2">Home</a>
+      <a href="/services/" class="border-b pb-2">Services</a>
+      <a href="/about/" class="border-b pb-2">About</a>
+      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
+      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
+    </div>
+  </div>
 </header>
 
+
 <!-- Hero Section -->
-<section style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);" class="py-20">
+<section style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);" class="section-gradient py-20">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
       Exquisite Boutique & Aari Embroidery
@@ -63,7 +68,7 @@
         <span>|</span>
         <span>No Obligation</span>
       </div>
-      <a href="/aari-courses/" class="border-2 px-8 py-3 rounded-lg font-semibold transition" style="border-color: #500C59; color: #500C59;" onmouseover="this.style.backgroundColor='#500C59'; this.style.color='white';" onmouseout="this.style.backgroundColor='white'; this.style.color='#500C59';">View Courses</a>
+      <a href="/aari-courses/" class="btn-outline">View Courses</a>
     </div>
   </div>
 </section>
@@ -77,111 +82,11 @@
       <p class="text-gray-600 text-lg">Premium. Minimal. Tailored for you.</p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
 
       <!-- CARD TEMPLATE V4 -->
-      <!-- CARD 1 -->
-            <a href="/services/blouse-designs/"
-         class="group bg-white backdrop-blur-md border rounded-3xl p-6
-           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
-         style="border-color: rgba(191,99,124,0.35);">
-
-        <img src="/services/blouse-designs.jpg"
-              class="w-full h-44 object-cover rounded-2xl mb-5 border"
-              style="border-color: rgba(196,199,242,0.5);">
-
-        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
-          Blouse Designs
-        </h3>
-
-        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
-          <li>• Designer & Princess Cut</li>
-          <li>• Patchwork Models</li>
-        </ul>
-
-        <div class="mt-auto">
-          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹650</p>
-          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
-        </div>
-      </a>
-
-      <!-- CARD 2 -->
-            <a href="/services/maxi-gown/"
-         class="group bg-white backdrop-blur-md border rounded-3xl p-6
-           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
-         style="border-color: rgba(191,99,124,0.35);">
-
-        <img src="/services/maxi-gown.jpg"
-              class="w-full h-44 object-cover rounded-2xl mb-5 border"
-              style="border-color: rgba(196,199,242,0.5);">
-
-        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
-          Maxi & Gown
-        </h3>
-
-        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
-          <li>• Circular / Straight Designs</li>
-          <li>• Lehenga Style Maxis</li>
-        </ul>
-
-        <div class="mt-auto">
-          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹1200</p>
-          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
-        </div>
-      </a>
-
-      <!-- CARD 3 -->
-            <a href="/services/kidswear/"
-         class="group bg-white backdrop-blur-md border rounded-3xl p-6
-           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
-         style="border-color: rgba(191,99,124,0.35);">
-
-        <img src="/services/kidswear.jpg"
-              class="w-full h-44 object-cover rounded-2xl mb-5 border"
-              style="border-color: rgba(196,199,242,0.5);">
-
-        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
-          Kidswear
-        </h3>
-
-        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
-          <li>• Frocks & Lehengas</li>
-          <li>• Festive Outfits</li>
-        </ul>
-
-        <div class="mt-auto">
-          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹600</p>
-          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
-        </div>
-      </a>
-
-      <!-- CARD 4 -->
-            <a href="/services/saree-upcycling/"
-         class="group bg-white backdrop-blur-md border rounded-3xl p-6
-           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
-         style="border-color: rgba(191,99,124,0.35);">
-
-        <img src="/services/saree-upcycling.jpg"
-              class="w-full h-44 object-cover rounded-2xl mb-5 border"
-              style="border-color: rgba(196,199,242,0.5);">
-
-        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
-          Saree Upcycling
-        </h3>
-
-        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
-          <li>• Saree → Kurti / Maxi</li>
-          <li>• Saree → Lehenga</li>
-        </ul>
-
-        <div class="mt-auto">
-          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹900</p>
-          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
-        </div>
-      </a>
-
-      <!-- CARD 5 -->
-            <a href="/services/aari-work/"
+      <!-- CARD: Aari Embroidery -->
+      <a href="/services/aari-work/"
          class="group bg-white backdrop-blur-md border rounded-3xl p-6
            shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
          style="border-color: rgba(191,99,124,0.35);">
@@ -205,10 +110,110 @@
         </div>
       </a>
 
+      <!-- CARD: Blouse Designs -->
+      <a href="/services/blouse-designs/"
+         class="group bg-white backdrop-blur-md border rounded-3xl p-6
+           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+         style="border-color: rgba(191,99,124,0.35);">
+
+        <img src="/services/blouse-designs.jpg"
+              class="w-full h-44 object-cover rounded-2xl mb-5 border"
+              style="border-color: rgba(196,199,242,0.5);">
+
+        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
+          Blouse Designs
+        </h3>
+
+        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
+          <li>• Designer & Princess Cut</li>
+          <li>• Patchwork Models</li>
+        </ul>
+
+        <div class="mt-auto">
+          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹650</p>
+          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
+        </div>
+      </a>
+
+      <!-- CARD: Kidswear -->
+      <a href="/services/kidswear/"
+         class="group bg-white backdrop-blur-md border rounded-3xl p-6
+           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+         style="border-color: rgba(191,99,124,0.35);">
+
+        <img src="/services/kidswear.jpg"
+              class="w-full h-44 object-cover rounded-2xl mb-5 border"
+              style="border-color: rgba(196,199,242,0.5);">
+
+        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
+          Kidswear
+        </h3>
+
+        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
+          <li>• Frocks & Lehengas</li>
+          <li>• Festive Outfits</li>
+        </ul>
+
+        <div class="mt-auto">
+          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹600</p>
+          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
+        </div>
+      </a>
+
+      <!-- CARD: Maxi & Gown -->
+      <a href="/services/maxi-gown/"
+         class="group bg-white backdrop-blur-md border rounded-3xl p-6
+           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+         style="border-color: rgba(191,99,124,0.35);">
+
+        <img src="/services/maxi-gown.jpg"
+              class="w-full h-44 object-cover rounded-2xl mb-5 border"
+              style="border-color: rgba(196,199,242,0.5);">
+
+        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
+          Maxi & Gown
+        </h3>
+
+        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
+          <li>• Circular / Straight Designs</li>
+          <li>• Lehenga Style Maxis</li>
+        </ul>
+
+        <div class="mt-auto">
+          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹1200</p>
+          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
+        </div>
+      </a>
+
+      <!-- CARD: Saree Upcycling -->
+      <a href="/services/saree-upcycling/"
+         class="group bg-white backdrop-blur-md border rounded-3xl p-6
+           shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+         style="border-color: rgba(191,99,124,0.35);">
+
+        <img src="/services/saree-upcycling.jpg"
+              class="w-full h-44 object-cover rounded-2xl mb-5 border"
+              style="border-color: rgba(196,199,242,0.5);">
+
+        <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">
+          Saree Upcycling
+        </h3>
+
+        <ul class="text-sm text-gray-600 leading-relaxed mb-4 space-y-1">
+          <li>• Saree → Kurti / Maxi</li>
+          <li>• Saree → Lehenga</li>
+        </ul>
+
+        <div class="mt-auto">
+          <p class="text-sm font-medium text-green-600 mb-3">Starting at ₹900</p>
+          <span class="font-medium text-purple-700 group-hover:underline tracking-tight">Explore →</span>
+        </div>
+      </a>
+
       <!-- CARD 6 (View All) -->
       <a href="/services/"
          class="bg-gradient-to-br from-purple-50 to-rose-50 border-2 border-dashed rounded-3xl p-6 flex flex-col justify-center items-center text-center shadow-sm hover:shadow-lg transition-all duration-300">
-        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-4" style="background: rgba(80,12,89,0.08); color: #500C59;">
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-4" style="background: rgba(196,199,242,0.35); color: #1D0259;">
           <i class="fas fa-th-large text-2xl"></i>
         </div>
         <h3 class="text-[1.35rem] font-semibold text-gray-900 mb-2 tracking-tight">View All Services</h3>
@@ -225,7 +230,7 @@
 </section>
 
 <!-- Why Choose Us Section -->
-<section class="py-16" style="background-color: #f5f3ff;">
+<section class="py-16 section-gradient">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-bold text-gray-900 mb-6">Why Choose Prajus Designs</h2>
     <p class="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -234,11 +239,11 @@
   </div>
   <div class="max-w-7xl mx-auto px-6 mt-6">
     <ul class="flex flex-wrap justify-center gap-4 text-sm text-gray-700">
-      <li class="px-3 py-2 rounded-full border" style="border-color:#BF637C;">Premium Tailoring</li>
-      <li class="px-3 py-2 rounded-full border" style="border-color:#BF637C;">Aari Embroidery Experts</li>
-      <li class="px-3 py-2 rounded-full border" style="border-color:#BF637C;">Eco-Friendly Upcycling</li>
-      <li class="px-3 py-2 rounded-full border" style="border-color:#BF637C;">Perfect Fit Guarantee</li>
-      <li class="px-3 py-2 rounded-full border" style="border-color:#BF637C;">Fast Turnaround</li>
+      <li class="chip-outline">Premium Tailoring</li>
+      <li class="chip-outline">Aari Embroidery Experts</li>
+      <li class="chip-outline">Eco-Friendly Upcycling</li>
+      <li class="chip-outline">Perfect Fit Guarantee</li>
+      <li class="chip-outline">Fast Turnaround</li>
     </ul>
   </div>
 </section>
@@ -252,7 +257,7 @@
       <div class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory">
         <div class="min-w-[300px] snap-start bg-white p-6 rounded-xl border-2 border-purple-100">
           <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-full" style="background: linear-gradient(135deg, #BF637C, #500C59);"></div>
+            <div class="w-10 h-10 rounded-full" style="background: var(--brand-gradient);"></div>
             <div>
               <p class="font-semibold text-gray-900">Priya Sharma</p>
               <p class="text-xs text-gray-500">Verified Customer</p>
@@ -265,7 +270,7 @@
         </div>
         <div class="min-w-[300px] snap-start bg-white p-6 rounded-xl border-2 border-purple-100">
           <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-full" style="background: linear-gradient(135deg, #BF637C, #500C59);"></div>
+            <div class="w-10 h-10 rounded-full" style="background: var(--brand-gradient);"></div>
             <div>
               <p class="font-semibold text-gray-900">Anjali Patel</p>
               <p class="text-xs text-gray-500">Verified Customer</p>
@@ -278,7 +283,7 @@
         </div>
         <div class="min-w-[300px] snap-start bg-white p-6 rounded-xl border-2 border-purple-100">
           <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-full" style="background: linear-gradient(135deg, #BF637C, #500C59);"></div>
+            <div class="w-10 h-10 rounded-full" style="background: var(--brand-gradient);"></div>
             <div>
               <p class="font-semibold text-gray-900">Sneha Kapoor</p>
               <p class="text-xs text-gray-500">Course Graduate</p>
@@ -291,14 +296,14 @@
         </div>
       </div>
       <div class="text-center mt-6">
-        <a href="https://maps.google.com" class="inline-block font-semibold" style="color:#BF637C;">View all comments →</a>
+        <a href="https://maps.google.com" class="inline-block font-semibold" style="color: var(--brand-deep);">View all comments →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Courses Section -->
-<section class="py-20" style="background-color: #f5f3ff;">
+<section class="py-20 section-gradient">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-12">
       <h2 class="text-4xl font-bold text-gray-900 mb-4">Aari Courses We Offer</h2>
@@ -307,30 +312,30 @@
     
     <div class="relative">
       <div class="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory">
-        <a href="/aari-courses/basic-to-advanced/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: #BF637C;">
+        <a href="/aari-courses/basic-to-advanced/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: rgba(196,199,242,0.8);">
           <h3 class="text-xl font-bold text-gray-900 mb-3">Basic to Advanced</h3>
           <p class="text-gray-600 mb-4">Master fundamental & advanced aari techniques in progressive modules.</p>
-          <span class="font-semibold" style="color: #BF637C;">Enroll →</span>
+          <span class="font-semibold" style="color: var(--brand-deep);">Enroll →</span>
         </a>
-        <a href="/aari-courses/5d-patchwork-course/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: #BF637C;">
+        <a href="/aari-courses/5d-patchwork-course/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: rgba(196,199,242,0.8);">
           <h3 class="text-xl font-bold text-gray-900 mb-3">5D Patchwork</h3>
           <p class="text-gray-600 mb-4">Create stunning 3D & 5D patchwork designs with precision aari work.</p>
-          <span class="font-semibold" style="color: #BF637C;">Enroll →</span>
+          <span class="font-semibold" style="color: var(--brand-deep);">Enroll →</span>
         </a>
-        <a href="/aari-courses/bridal-aari-course/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: #BF637C;">
+        <a href="/aari-courses/bridal-aari-course/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: rgba(196,199,242,0.8);">
           <h3 class="text-xl font-bold text-gray-900 mb-3">Bridal Aari</h3>
           <p class="text-gray-600 mb-4">Learn exquisite bridal aari embroidery & advanced decorative techniques.</p>
-          <span class="font-semibold" style="color: #BF637C;">Enroll →</span>
+          <span class="font-semibold" style="color: var(--brand-deep);">Enroll →</span>
         </a>
-        <a href="/aari-courses/pre-pleating-course/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: #BF637C;">
+        <a href="/aari-courses/pre-pleating-course/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: rgba(196,199,242,0.8);">
           <h3 class="text-xl font-bold text-gray-900 mb-3">Pre-pleating</h3>
           <p class="text-gray-600 mb-4">Master the art of saree pre-pleating for perfect folds & draping.</p>
-          <span class="font-semibold" style="color: #BF637C;">Enroll →</span>
+          <span class="font-semibold" style="color: var(--brand-deep);">Enroll →</span>
         </a>
-        <a href="/aari-courses/blouse-model-making/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: #BF637C;">
+        <a href="/aari-courses/blouse-model-making/" class="min-w-[300px] snap-start card-hover bg-white p-6 rounded-xl border-2" style="border-color: rgba(196,199,242,0.8);">
           <h3 class="text-xl font-bold text-gray-900 mb-3">Blouse Model Making</h3>
           <p class="text-gray-600 mb-4">Design & construct custom blouse models with professional patterns.</p>
-          <span class="font-semibold" style="color: #BF637C;">Enroll →</span>
+          <span class="font-semibold" style="color: var(--brand-deep);">Enroll →</span>
         </a>
       </div>
       <div class="text-center mt-6">
@@ -376,7 +381,7 @@
 </footer>
 
 <!-- Floating Call Button -->
-<a href="tel:+919952749408" class="float-cta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg" style="background-color: #1A73E8;">
+<a href="tel:+919952749408" class="float-cta" >
   <i class="fas fa-phone text-2xl"></i>
 </a>
 

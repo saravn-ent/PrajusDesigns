@@ -5,38 +5,51 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kids Lehenga — Prajus Designs</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    :root {
-      --brand-gold:#F4B321;
-      --brand-teal:#1F8A8E;
-      --cta-green:#25D366;
-    }
     .gallery-btn{background:white;border-radius:9999px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(15,23,42,0.12);} 
     .img-placeholder{background:linear-gradient(135deg,#fff7ed,#e0f2fe);border-radius:1.5rem;height:210px;width:100%;}
     @media(max-width:640px){.img-placeholder{height:160px;}}
   </style>
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
-  <header class="bg-white border-b sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="text-2xl font-bold" style="color:var(--brand-teal)">✨ Prajus Designs</a>
-      <nav class="hidden md:block">
-        <ul class="flex gap-6 text-sm text-gray-700">
-          <li><a href="/" class="hover:text-[var(--brand-gold)]">Home</a></li>
-          <li><a href="/services/" class="hover:text-[var(--brand-gold)]">Services</a></li>
-          <li><a href="/aari-courses/" class="hover:text-[var(--brand-gold)]">Courses</a></li>
-          <li><a href="/about/" class="hover:text-[var(--brand-gold)]">About</a></li>
-        </ul>
-      </nav>
-      <button aria-label="Menu" class="md:hidden text-gray-700 text-xl"><i class="fas fa-bars"></i></button>
+  <!-- Navbar -->
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex items-center justify-between py-4">
+      <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
+        <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
+      </a>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
+        <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
+        <li><a href="/services/" class="hover:text-[#1D0259] transition">Services</a></li>
+        <li><a href="/about/" class="hover:text-[#1D0259] transition">About</a></li>
+        <li><a href="/aari-courses/" class="hover:text-[#1D0259] transition">Courses</a></li>
+        <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
+      <a href="/" class="border-b pb-2">Home</a>
+      <a href="/services/" class="border-b pb-2">Services</a>
+      <a href="/about/" class="border-b pb-2">About</a>
+      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
+      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <main>
-    <section class="bg-gradient-to-br from-amber-50 via-white to-teal-50 py-16">
+    <section class="section-gradient bg-gradient-to-br from-amber-50 via-white to-teal-50 py-16">
       <div class="max-w-5xl mx-auto px-6 text-center">
-        <p class="uppercase text-xs tracking-[0.4em] text-[var(--brand-teal)]">little royal lehengas</p>
+        <p class="uppercase text-xs tracking-[0.4em] text-brand">little royal lehengas</p>
         <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Custom Kids Lehengas</h1>
         <p class="text-lg text-gray-700">Lightweight lehenga sets with breathable linings, comfortable waistbands, and sparkly details for weddings, receptions, and half-saree events.</p>
       </div>
@@ -113,23 +126,23 @@
     <section class="py-8 border-y">
       <div class="max-w-5xl mx-auto px-6 grid gap-4 md:grid-cols-3 text-sm text-gray-700">
         <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
-          <i class="fas fa-ruler-horizontal text-[var(--brand-teal)] mt-1"></i>
+          <i class="fas fa-ruler-horizontal text-brand mt-1"></i>
           <div>
-            <strong class="text-[var(--brand-teal)]">Secure measurements</strong>
+            <strong class="text-brand">Secure measurements</strong>
             <p class="text-gray-600">Grow-friendly waist + blouse allowance.</p>
           </div>
         </article>
         <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
-          <i class="fas fa-fan text-[var(--brand-teal)] mt-1"></i>
+          <i class="fas fa-fan text-brand mt-1"></i>
           <div>
-            <strong class="text-[var(--brand-teal)]">Swish-worthy volume</strong>
+            <strong class="text-brand">Swish-worthy volume</strong>
             <p class="text-gray-600">Light can-can or cotton kalis.</p>
           </div>
         </article>
         <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
-          <i class="fas fa-shield-heart text-[var(--brand-teal)] mt-1"></i>
+          <i class="fas fa-shield-heart text-brand mt-1"></i>
           <div>
-            <strong class="text-[var(--brand-teal)]">Kid-safe hardware</strong>
+            <strong class="text-brand">Kid-safe hardware</strong>
             <p class="text-gray-600">Soft hooks, covered zips, extra lining.</p>
           </div>
         </article>
@@ -154,7 +167,7 @@
         <div class="bg-white rounded-3xl border shadow-md p-6 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <p class="text-sm text-gray-500">Signature Kids Lehenga Set</p>
-            <p class="text-3xl font-extrabold text-[var(--brand-teal)]">₹1,320</p>
+            <p class="text-3xl font-extrabold text-brand">₹1,320</p>
             <p class="text-xs text-gray-500">Blouse + lehenga + dupatta up to size 10Y</p>
           </div>
           <p class="text-sm text-gray-600 max-w-sm">Includes pattern drafting, lining, light can-can or kalis, basic embellishment, and one fit tweak.</p>
@@ -204,7 +217,7 @@
       </div>
     </section>
 
-    <section class="py-14">
+    <section class="section-gradient py-16">
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h3 class="text-2xl font-bold mb-3">Need a mini bride look?</h3>
         <p class="text-gray-700 mb-6">Message us the event date, size details, and inspiration board; we revert with sketches and delivery plan.</p>
@@ -226,17 +239,17 @@
         <div>
           <h4 class="text-white font-bold mb-3">Services</h4>
           <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-[#F2E96B]" href="/services/aari-work/">Aari Work</a></li>
-            <li><a class="hover:text-[#F2E96B]" href="/services/maxi-gown/">Maxi & Gown</a></li>
-            <li><a class="hover:text-[#F2E96B]" href="/services/saree-upcycling/">Saree Upcycling</a></li>
+            <li><a class="hover:text-[#1D0259]" href="/services/aari-work/">Aari Work</a></li>
+            <li><a class="hover:text-[#1D0259]" href="/services/maxi-gown/">Maxi & Gown</a></li>
+            <li><a class="hover:text-[#1D0259]" href="/services/saree-upcycling/">Saree Upcycling</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-white font-bold mb-3">Quick Links</h4>
           <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-[#F2E96B]" href="/">Home</a></li>
-            <li><a class="hover:text-[#F2E96B]" href="/about/">About</a></li>
-            <li><a class="hover:text-[#F2E96B]" href="/aari-courses/">Courses</a></li>
+            <li><a class="hover:text-[#1D0259]" href="/">Home</a></li>
+            <li><a class="hover:text-[#1D0259]" href="/about/">About</a></li>
+            <li><a class="hover:text-[#1D0259]" href="/aari-courses/">Courses</a></li>
           </ul>
         </div>
         <div>
@@ -272,3 +285,9 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+

@@ -4,48 +4,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Blouse Designs — Prajus Designs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <style>
-    .btn-primary { background: linear-gradient(135deg, #D4AF37 0%, #C9A027 100%); transition: all 0.3s; }
-    .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3); }
-    .float-cta { position: fixed; bottom: 30px; right: 30px; z-index: 40; animation: bounce 2s infinite; }
-    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-  </style>
+  
+  <script src="/assets/js/main.js" defer></script>
 </head>
 
 <body class="bg-white text-gray-800">
 
 
 <!-- Navbar -->
-<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <a href="/" class="text-2xl font-bold text-gray-900">✨ Prajus Designs</a>
-    <ul class="flex gap-8 font-medium text-gray-700">
-      <li><a href="/" class="hover:text-[#D4AF37] transition">Home</a></li>
-      <li><a href="/about/" class="hover:text-[#D4AF37] transition">About</a></li>
-      <li><a href="/services/" class="hover:text-[#D4AF37] transition">Services</a></li>
-      <li><a href="/aari-courses/" class="hover:text-[#D4AF37] transition">Courses</a></li>
-    </ul>
-  </nav>
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex items-center justify-between py-4">
+      <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
+        <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
+      </a>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
+        <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
+        <li><a href="/services/" class="hover:text-[#1D0259] transition">Services</a></li>
+        <li><a href="/about/" class="hover:text-[#1D0259] transition">About</a></li>
+        <li><a href="/aari-courses/" class="hover:text-[#1D0259] transition">Courses</a></li>
+        <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
+      <a href="/" class="border-b pb-2">Home</a>
+      <a href="/services/" class="border-b pb-2">Services</a>
+      <a href="/about/" class="border-b pb-2">About</a>
+      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
+      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
+    </div>
+  </div>
 </header>
+
 
 
 <main>
 
 <!-- HERO -->
-<section class="relative py-16 bg-gray-50">
+<section class="section-gradient relative py-16 bg-gray-50">
   <img src="https://images.unsplash.com/photo-1604335399105-cb3dc868e946?auto=format&fit=crop&w=1400&q=80"
        class="absolute inset-0 w-full h-full object-cover opacity-15" />
   
   <div class="relative max-w-7xl mx-auto px-6">
     <div class="flex items-center gap-3 text-sm mb-3">
-      <a href="/services/" class="text-[#D4AF37] hover:underline">Services</a>
+      <a href="/services/" class="text-brand hover:underline">Services</a>
       <span>/</span>
       <span class="text-gray-600">Blouse Designs</span>
     </div>
@@ -72,114 +87,113 @@
     <div class="grid md:grid-cols-2 gap-10">
 
       <!-- Pattern Blouse -->
-      <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition border border-gray-200">
-        
+      <div class="service-card service-card--media card-hover">
         <img
           src="https://images.pexels.com/photos/20867570/pexels-photo-20867570.jpeg?auto=compress&cs=tinysrgb&w=1100"
           alt="Back view of a burgundy patterned blouse with scalloped tie-up detailing"
-          class="w-full h-48 object-cover rounded-xl mb-5"
+          class="mb-2"
           loading="lazy"
           decoding="async"
         >
 
-        <h3 class="text-2xl font-bold mb-1">Pattern Blouse</h3>
-        <p class="text-green-600 font-semibold mb-3">Starting at ₹650</p>
+        <h3 class="text-2xl font-bold">Pattern Blouse</h3>
+        <p class="service-card__meta">Starting at ₹650</p>
 
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700">
           Embroidery, motifs & detailed prints ideal for silk sarees & festive wear.
         </p>
 
-        <ul class="text-gray-700 text-sm space-y-2 mb-4">
+        <ul class="text-gray-700 text-sm space-y-2">
           <li>✔ Designer motifs & handcrafted details</li>
           <li>✔ Multiple neck & sleeve styles</li>
           <li>✔ Premium finishing included</li>
         </ul>
 
-        <a class="text-[#D4AF37] font-semibold" href="/services/blouse-designs/pattern-blouse/">View Collection →</a>
+        <a class="text-brand font-semibold" href="/services/blouse-designs/pattern-blouse/">View Collection →</a>
       </div>
 
 
       <!-- Patchwork Blouse -->
-      <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition border border-gray-200">
+      <div class="service-card service-card--media card-hover">
 
         <img
           src="https://images.pexels.com/photos/27969726/pexels-photo-27969726.jpeg?auto=compress&cs=tinysrgb&w=1100"
           alt="Detailed view of a tasselled patchwork blouse highlighting mixed fabrics"
-          class="w-full h-48 object-cover rounded-xl mb-5"
+          class="mb-2"
           loading="lazy"
           decoding="async"
         >
 
-        <h3 class="text-2xl font-bold mb-1">Patchwork Blouse</h3>
-        <p class="text-green-600 font-semibold mb-3">Starting at ₹750</p>
+        <h3 class="text-2xl font-bold">Patchwork Blouse</h3>
+        <p class="service-card__meta">Starting at ₹750</p>
 
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700">
           Mix-fabric designs with kalamkari patches, mirror work & motifs.
         </p>
 
-        <ul class="text-gray-700 text-sm space-y-2 mb-4">
+        <ul class="text-gray-700 text-sm space-y-2">
           <li>✔ Trendy patch styles</li>
           <li>✔ Durable double-stitch finishing</li>
           <li>✔ Custom color match to saree</li>
         </ul>
 
-        <a class="text-[#D4AF37] font-semibold" href="/services/blouse-designs/patchwork-blouse/">View Collection →</a>
+        <a class="text-brand font-semibold" href="/services/blouse-designs/patchwork-blouse/">View Collection →</a>
       </div>
 
 
       <!-- Princess Cut -->
-      <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition border border-gray-200">
+      <div class="service-card service-card--media card-hover">
 
         <img
           src="https://images.pexels.com/photos/7432222/pexels-photo-7432222.jpeg?auto=compress&cs=tinysrgb&w=1100"
           alt="Ivory lace princess-cut blouse displayed on a mannequin with curved seams"
-          class="w-full h-48 object-cover rounded-xl mb-5"
+          class="mb-2"
           loading="lazy"
           decoding="async"
         >
 
-        <h3 class="text-2xl font-bold mb-1">Princess Cut Blouse</h3>
-        <p class="text-green-600 font-semibold mb-3">Starting at ₹850</p>
+        <h3 class="text-2xl font-bold">Princess Cut Blouse</h3>
+        <p class="service-card__meta">Starting at ₹850</p>
 
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700">
           Elegant shaping with flawless fit for weddings & premium sarees.
         </p>
 
-        <ul class="text-gray-700 text-sm space-y-2 mb-4">
+        <ul class="text-gray-700 text-sm space-y-2">
           <li>✔ Perfect body-contouring shape</li>
           <li>✔ Optional padding & deep-neck models</li>
           <li>✔ Seamless finishing</li>
         </ul>
 
-        <a class="text-[#D4AF37] font-semibold" href="/services/blouse-designs/princess-cut/">View Collection →</a>
+        <a class="text-brand font-semibold" href="/services/blouse-designs/princess-cut/">View Collection →</a>
       </div>
 
 
       <!-- Crop Top Blouse -->
-      <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition border border-gray-200">
+      <div class="service-card service-card--media card-hover">
         
         <img
           src="https://images.pexels.com/photos/6770820/pexels-photo-6770820.jpeg?auto=compress&cs=tinysrgb&w=1100"
           alt="Flat-lay of a denim crop-top blouse set showing modern boned structure"
-          class="w-full h-48 object-cover rounded-xl mb-5"
+          class="mb-2"
           loading="lazy"
           decoding="async"
         >
 
-        <h3 class="text-2xl font-bold mb-1">Crop Top Blouse</h3>
-        <p class="text-green-600 font-semibold mb-3">Starting at ₹900</p>
+        <h3 class="text-2xl font-bold">Crop Top Blouse</h3>
+        <p class="service-card__meta">Starting at ₹900</p>
 
-        <p class="text-gray-700 mb-4">
+        <p class="text-gray-700">
           Indo-western, trendy fits perfect for designer sarees & fusion wear.
         </p>
 
-        <ul class="text-gray-700 text-sm space-y-2 mb-4">
+        <ul class="text-gray-700 text-sm space-y-2">
           <li>✔ Party wear ready designs</li>
           <li>✔ Stretch & structured fabric options</li>
           <li>✔ Stylish neck & sleeve patterns</li>
         </ul>
 
-        <a class="text-[#D4AF37] font-semibold" href="/services/blouse-designs/crop-top-blouse/">View Collection →</a>
+        <a class="text-brand font-semibold" href="/services/blouse-designs/crop-top-blouse/">View Collection →</a>
       </div>
 
     </div>
@@ -189,22 +203,16 @@
 
 
 <!-- CTA -->
-<section class="py-20 bg-gradient-to-r from-blue-50 to-cyan-50">
+<section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">
-      Want a Perfect-Fit Custom Blouse?
-    </h2>
-
-    <p class="text-xl text-gray-700 mb-8">
-      Chat with our designer and get style suggestions for your saree.
-    </p>
-
-    <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20want%20a%20custom%20blouse"
-       class="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl text-lg shadow-lg hover:scale-105 transition">
-      <i class="fab fa-whatsapp text-2xl"></i> Chat on WhatsApp
+    <h2 class="text-4xl font-bold text-gray-900 mb-4">Need Styling Help For Your Saree?</h2>
+    <p class="text-xl text-gray-700 mb-8">Share your saree photos and measurements—we will reply on WhatsApp with blouse ideas and quotes.</p>
+    <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question"
+       class="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl text-white"
+       style="background-color: #25D366;">
+      <i class="fab fa-whatsapp text-2xl"></i>
+      Chat on WhatsApp
     </a>
-
   </div>
 </section>
 
@@ -227,18 +235,18 @@
       <div>
         <h4 class="text-white font-bold mb-4">Services</h4>
         <ul class="text-sm space-y-2">
-          <li><a href="/services/blouse-designs/" class="hover:text-[#D4AF37]">Blouse Designs</a></li>
-          <li><a href="/services/maxi-gown/" class="hover:text-[#D4AF37]">Maxi Gown</a></li>
-          <li><a href="/services/aari-work/" class="hover:text-[#D4AF37]">Aari Work</a></li>
+          <li><a href="/services/blouse-designs/" class="hover:text-[#1D0259]">Blouse Designs</a></li>
+          <li><a href="/services/maxi-gown/" class="hover:text-[#1D0259]">Maxi Gown</a></li>
+          <li><a href="/services/aari-work/" class="hover:text-[#1D0259]">Aari Work</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="text-white font-bold mb-4">Quick Links</h4>
         <ul class="text-sm space-y-2">
-          <li><a href="/" class="hover:text-[#D4AF37]">Home</a></li>
-          <li><a href="/services/" class="hover:text-[#D4AF37]">Services</a></li>
-          <li><a href="/aari-courses/" class="hover:text-[#D4AF37]">Courses</a></li>
+          <li><a href="/" class="hover:text-[#1D0259]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[#1D0259]">Services</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[#1D0259]">Courses</a></li>
         </ul>
       </div>
 
@@ -259,10 +267,14 @@
 
 
 <!-- Floating Call Button -->
-<a href="tel:+919952749408" class="float-cta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg" style="background-color: #1A73E8;">
+<a href="tel:+919952749408" class="float-cta" >
   <i class="fas fa-phone text-2xl"></i>
 </a>
 
 
 </body>
 </html>
+
+
+
+

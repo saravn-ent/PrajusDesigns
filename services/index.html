@@ -5,33 +5,45 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Services — Prajus Designs</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(80, 12, 89, 0.15); }
-    .btn-primary { background: linear-gradient(135deg, #500C59 0%, #BF637C 100%); transition: all 0.3s; color: white; }
-    .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(80, 12, 89, 0.3); }
-    .float-cta { position: fixed; bottom: 30px; right: 30px; z-index: 40; animation: bounce 2s infinite; }
-    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-  </style>
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body class="bg-white text-gray-800">
 
 <!-- Navbar -->
-<header class="bg-white border-b-2 border-purple-200 sticky top-0 z-50">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <a href="/" class="text-2xl font-bold" style="color: #500C59;">✨ Prajus Designs</a>
-    <ul class="flex gap-8 font-medium text-gray-700">
-      <li><a href="/" class="hover:text-[#BF637C] transition">Home</a></li>
-      <li><a href="/about/" class="hover:text-[#BF637C] transition">About</a></li>
-      <li><a href="/services/" class="hover:text-[#BF637C] transition">Services</a></li>
-      <li><a href="/aari-courses/" class="hover:text-[#BF637C] transition">Courses</a></li>
-    </ul>
-  </nav>
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex items-center justify-between py-4">
+      <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
+        <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
+      </a>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
+        <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
+        <li><a href="/services/" class="hover:text-[#1D0259] transition">Services</a></li>
+        <li><a href="/about/" class="hover:text-[#1D0259] transition">About</a></li>
+        <li><a href="/aari-courses/" class="hover:text-[#1D0259] transition">Courses</a></li>
+        <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
+      <a href="/" class="border-b pb-2">Home</a>
+      <a href="/services/" class="border-b pb-2">Services</a>
+      <a href="/about/" class="border-b pb-2">About</a>
+      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
+      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
+    </div>
+  </div>
 </header>
 
+
 <!-- Hero Section -->
-<section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
+<section class="section-gradient py-16">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h1 class="text-5xl font-bold text-gray-900 mb-4">Our Services</h1>
     <p class="text-xl text-gray-600">Discover our range of premium tailoring & embroidery services</p>
@@ -41,64 +53,65 @@
 <!-- Services Grid -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-8 mb-8">
-      <!-- Service 1 -->
-      <a href="/services/blouse-designs/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-blouse text-xl" style="color: #500C59;"></i>
+    <div class="grid grid-cols-2 gap-6 md:gap-8 mb-8">
+      <!-- Aari Work -->
+      <a href="/services/aari-work/" class="service-card service-card--accent card-hover">
+        <div class="flex items-center gap-4">
+          <div class="service-card__icon">
+            <i class="fas fa-needle"></i>
+          </div>
+          <h3 class="text-2xl font-bold">Aari Work</h3>
+        </div>
+        <p class="text-base">Intricate embroidery from basic motifs to advanced bridal & 5D patchwork embellishments.</p>
+        <span class="font-semibold">View Details →</span>
+      </a>
+
+      <!-- Blouse Designs -->
+      <a href="/services/blouse-designs/" class="service-card card-hover">
+        <div class="flex items-center gap-4">
+          <div class="service-card__icon">
+            <i class="fas fa-blouse"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-900">Blouse Designs</h3>
         </div>
-        <p class="text-gray-600 mb-4">Exquisite blouse designs including pattern, patchwork, princess-cut & crop-top styles. Customize every detail.</p>
-        <span class="font-semibold" style="color: #BF637C;">View Details →</span>
+        <p class="text-gray-600">Exquisite blouse designs including pattern, patchwork, princess-cut & crop-top styles. Customize every detail.</p>
+        <span class="font-semibold text-brand">View Details →</span>
       </a>
 
-      <!-- Service 2 -->
-      <a href="/services/maxi-gown/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-dress text-xl" style="color: #500C59;"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900">Maxi & Gown</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Elegant circular, straight & lehenga-style maxis for all occasions. Perfectly tailored for your style.</p>
-        <span class="font-semibold" style="color: #BF637C;">View Details →</span>
-      </a>
-
-      <!-- Service 3 -->
-      <a href="/services/kidswear/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-child text-xl" style="color: #500C59;"></i>
+      <!-- Kidswear -->
+      <a href="/services/kidswear/" class="service-card card-hover">
+        <div class="flex items-center gap-4">
+          <div class="service-card__icon">
+            <i class="fas fa-child"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-900">Kidswear</h3>
         </div>
-        <p class="text-gray-600 mb-4">Comfortable & colorful frocks, lehengas & festive sets designed specially for kids.</p>
-        <span class="font-semibold" style="color: #BF637C;">View Details →</span>
+        <p class="text-gray-600">Comfortable & colorful frocks, lehengas & festive sets designed specially for kids.</p>
+        <span class="font-semibold text-brand">View Details →</span>
       </a>
 
-      <!-- Service 4 -->
-      <a href="/services/saree-upcycling/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-leaf text-xl" style="color: #500C59;"></i>
+      <!-- Maxi & Gown -->
+      <a href="/services/maxi-gown/" class="service-card card-hover">
+        <div class="flex items-center gap-4">
+          <div class="service-card__icon">
+            <i class="fas fa-dress"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900">Maxi & Gown</h3>
+        </div>
+        <p class="text-gray-600">Elegant circular, straight & lehenga-style maxis for all occasions. Perfectly tailored for your style.</p>
+        <span class="font-semibold text-brand">View Details →</span>
+      </a>
+
+      <!-- Saree Upcycling -->
+      <a href="/services/saree-upcycling/" class="service-card card-hover">
+        <div class="flex items-center gap-4">
+          <div class="service-card__icon">
+            <i class="fas fa-leaf"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-900">Saree Upcycling</h3>
         </div>
-        <p class="text-gray-600 mb-4">Transform your old sarees into beautiful kurtis, lehengas & maxis sustainably.</p>
-        <span class="font-semibold" style="color: #BF637C;">View Details →</span>
-      </a>
-    </div>
-
-    <!-- Special Service -->
-    <div class="rounded-2xl p-8 border-2 border-[#BF637C]" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
-      <a href="/services/aari-work/" class="flex items-center justify-between">
-        <div>
-          <h3 class="text-3xl font-bold text-gray-900 mb-3">✨ Aari Work</h3>
-          <p class="text-gray-600 text-lg">Intricate aari embroidery from basic to advanced, including bridal designs & 5D patchwork.</p>
-        </div>
-        <i class="fas fa-arrow-right text-3xl" style="color: #BF637C;"></i>
+        <p class="text-gray-600">Transform your old sarees into beautiful kurtis, lehengas & maxis sustainably.</p>
+        <span class="font-semibold text-brand">View Details →</span>
       </a>
     </div>
   </div>
@@ -107,9 +120,14 @@
 <!-- CTA Section -->
 <section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">Ready to Transform Your Style?</h2>
-    <p class="text-xl text-gray-600 mb-8">Contact us today for a consultation on your custom design</p>
-    <a href="tel:+919876543210" class="btn-primary text-white px-8 py-3 rounded-lg font-semibold inline-block">Call Now</a>
+    <h2 class="text-4xl font-bold text-gray-900 mb-4">Need Help Planning Your Outfit?</h2>
+    <p class="text-xl text-gray-700 mb-8">Share your ideas or saree photos and get instant styling suggestions on WhatsApp.</p>
+    <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question"
+       class="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl text-white"
+       style="background-color: #25D366;">
+      <i class="fab fa-whatsapp text-2xl"></i>
+      Chat on WhatsApp
+    </a>
   </div>
 </section>
 
@@ -124,17 +142,17 @@
       <div>
         <h4 class="text-white font-bold mb-4">Services</h4>
         <ul class="text-sm space-y-2">
-          <li><a href="/services/blouse-designs/" class="hover:text-[#F2E96B]">Blouse Designs</a></li>
-          <li><a href="/services/maxi-gown/" class="hover:text-[#F2E96B]">Maxi Gown</a></li>
-          <li><a href="/services/aari-work/" class="hover:text-[#F2E96B]">Aari Work</a></li>
+          <li><a href="/services/blouse-designs/" class="hover:text-[#1D0259]">Blouse Designs</a></li>
+          <li><a href="/services/maxi-gown/" class="hover:text-[#1D0259]">Maxi Gown</a></li>
+          <li><a href="/services/aari-work/" class="hover:text-[#1D0259]">Aari Work</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold mb-4">Quick Links</h4>
         <ul class="text-sm space-y-2">
-          <li><a href="/" class="hover:text-[#F2E96B]">Home</a></li>
-          <li><a href="/about/" class="hover:text-[#F2E96B]">About</a></li>
-          <li><a href="/aari-courses/" class="hover:text-[#F2E96B]">Courses</a></li>
+          <li><a href="/" class="hover:text-[#1D0259]">Home</a></li>
+          <li><a href="/about/" class="hover:text-[#1D0259]">About</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[#1D0259]">Courses</a></li>
         </ul>
       </div>
       <div>
@@ -150,9 +168,13 @@
 </footer>
 
 <!-- Floating Call Button -->
-<a href="tel:+919876543210" class="float-cta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg" style="background-color: #1A73E8;">
+<a href="tel:+919876543210" class="float-cta" >
   <i class="fas fa-phone text-2xl"></i>
 </a>
 
 </body>
 </html>
+
+
+
+

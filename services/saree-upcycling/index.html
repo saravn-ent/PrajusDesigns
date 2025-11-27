@@ -1,185 +1,198 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Saree Upcycling — Prajus Designs</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    :root {
-      --brand-purple:#500C59;
-      --brand-pink:#BF637C;
-      --brand-yellow:#F2E96B;
-      --whatsapp-green:#25D366;
-    }
-    .service-card { transition:transform .3s ease, box-shadow .3s ease; border:1px solid rgba(0,0,0,0.06); }
-    .service-card:hover { transform:translateY(-6px); box-shadow:0 12px 30px rgba(80,12,89,0.16); }
-  </style>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script src="/assets/js/main.js" defer></script>
 </head>
-<body class="bg-white text-gray-900 antialiased">
-  <header class="bg-white border-b sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="/" class="text-2xl font-bold" style="color:var(--brand-purple)">✨ Prajus Designs</a>
-      <nav class="hidden md:block">
-        <ul class="flex gap-6 text-sm text-gray-700">
-          <li><a href="/" class="hover:text-[var(--brand-pink)]">Home</a></li>
-          <li><a href="/services/" class="hover:text-[var(--brand-pink)]">Services</a></li>
-          <li><a href="/aari-courses/" class="hover:text-[var(--brand-pink)]">Courses</a></li>
-          <li><a href="/about/" class="hover:text-[var(--brand-pink)]">About</a></li>
+<body class="bg-white text-gray-900">
+
+<!-- Navbar -->
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex items-center justify-between py-4">
+      <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
+        <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
+      </a>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
+        <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
+        <li><a href="/services/" class="hover:text-[#1D0259] transition">Services</a></li>
+        <li><a href="/about/" class="hover:text-[#1D0259] transition">About</a></li>
+        <li><a href="/aari-courses/" class="hover:text-[#1D0259] transition">Courses</a></li>
+        <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
+      <a href="/" class="border-b pb-2">Home</a>
+      <a href="/services/" class="border-b pb-2">Services</a>
+      <a href="/about/" class="border-b pb-2">About</a>
+      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
+      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+
+<!-- Hero -->
+<section class="section-gradient relative py-16 bg-amber-50">
+  <img src="https://images.pexels.com/photos/1126993/pexels-photo-1126993.jpeg?auto=compress&cs=tinysrgb&w=1600"
+       alt="Hands arranging saree pleats on a table"
+       class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" decoding="async">
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-3 text-sm mb-3">
+      <a href="/services/" class="text-[#F59E0B] hover:underline">Services</a>
+      <span>/</span>
+      <span class="text-gray-600">Saree Upcycling</span>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-3">
+      Turn Your Heirloom Sarees into Modern Keepsakes
+    </h1>
+    <p class="text-lg text-gray-700">Kurti sets • Lehenga conversions • Maxi dresses • Ready-to-drape pleats</p>
+  </div>
+</section>
+
+<!-- Collections -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Popular Saree Transformations</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/6311658/pexels-photo-6311658.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Tailor chalking measurements for kurti conversion"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Saree → Kurti Sets</h3>
+        <p class="service-card__meta">Starting at ₹1,850</p>
+        <p class="text-gray-700">Panel-cut kurtis with perfectly aligned borders, matching pants and dupattas from the pallu.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Lining + facing included</li>
+          <li>✔ Motif mapping before cutting</li>
+          <li>✔ 3–5 day delivery window</li>
         </ul>
-      </nav>
-      <button aria-label="Menu" class="md:hidden text-gray-700 text-xl"><i class="fas fa-bars"></i></button>
+        <a class="text-[#F59E0B] font-semibold" href="/services/saree-upcycling/saree-to-kurti/">View Process →</a>
+      </div>
+
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/1484799/pexels-photo-1484799.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Embroidered lehenga crafted from a silk saree"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Saree → Lehenga Sets</h3>
+        <p class="service-card__meta">Starting at ₹2,950</p>
+        <p class="text-gray-700">Can-can volume, tassel tie-ups and matching blouse patterns that preserve the saree’s zari story.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Panel measurements shared for approval</li>
+          <li>✔ Contrast dupatta or cape add-ons</li>
+          <li>✔ 4–7 day delivery window</li>
+        </ul>
+        <a class="text-[#F59E0B] font-semibold" href="/services/saree-upcycling/saree-to-lehenga/">View Process →</a>
+      </div>
+
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/1489274/pexels-photo-1489274.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Maxi gown created from a heritage saree"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Saree → Maxi / Gown</h3>
+        <p class="service-card__meta">Starting at ₹3,200</p>
+        <p class="text-gray-700">Structured bodice, concealed zips and dramatic skirts using the saree pallu as focal panels.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Optional corsetry + padding</li>
+          <li>✔ Hand-finished horsehair hems</li>
+          <li>✔ 5–8 day delivery window</li>
+        </ul>
+        <a class="text-[#F59E0B] font-semibold" href="/services/saree-upcycling/saree-to-maxi/">View Process →</a>
+      </div>
+
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/1126993/pexels-photo-1126993.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Close-up of pleated saree ready to wear"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Saree Pre-Pleating</h3>
+        <p class="service-card__meta">Starting at ₹1,250</p>
+        <p class="text-gray-700">Precision pleats stitched in place with hip markers, fall & pico finishing and travel-friendly packing.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ 24–48 hour express slots</li>
+          <li>✔ Includes blouse steaming</li>
+          <li>✔ Emergency wedding concierge support</li>
+        </ul>
+        <a class="text-[#F59E0B] font-semibold" href="/services/saree-upcycling/saree-prepleating/">Book Slot →</a>
+      </div>
+
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="bg-gradient-to-r from-purple-50 via-pink-50 to-amber-50 py-16">
-      <div class="max-w-5xl mx-auto px-6 text-center">
-        <p class="uppercase tracking-[0.3em] text-xs text-gray-500 mb-4">Sustainable Couture</p>
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Saree Upcycling Studio</h1>
-        <p class="text-lg text-gray-700">Give treasured sarees a functional second life—kurtis, lehengas, maxi gowns, or ready-to-drape pleats handcrafted in Chennai.</p>
+<!-- CTA -->
+<section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-4">Ready to Reimagine Your Saree?</h2>
+    <p class="text-xl text-gray-700 mb-8">WhatsApp us saree photos, preferred style and event date—we’ll respond with concepts and pricing.</p>
+    <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question"
+       class="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl text-white"
+       style="background-color: #25D366;">
+      <i class="fab fa-whatsapp text-2xl"></i>
+      Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <h4 class="text-white font-bold mb-4">✨ Prajus Designs</h4>
+        <p class="text-sm">Premium boutique tailoring & aari embroidery studio based in Chennai.</p>
       </div>
-    </section>
-
-    <section class="py-10 border-b">
-      <div class="max-w-5xl mx-auto px-6 grid gap-4 sm:grid-cols-3 text-sm text-gray-700">
-        <div class="bg-white rounded-2xl p-4 shadow-sm border flex gap-3">
-          <i class="fas fa-hand-holding-heart text-[var(--brand-purple)] mt-1"></i>
-          <div>
-            <strong class="text-gray-900">Preserve zari borders</strong>
-            <p class="text-gray-600">We map motifs before cutting.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl p-4 shadow-sm border flex gap-3">
-          <i class="fas fa-recycle text-[var(--brand-purple)] mt-1"></i>
-          <div>
-            <strong class="text-gray-900">Zero-waste mindset</strong>
-            <p class="text-gray-600">Leftovers become tassels, belts.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl p-4 shadow-sm border flex gap-3">
-          <i class="fas fa-stopwatch text-[var(--brand-purple)] mt-1"></i>
-          <div>
-            <strong class="text-gray-900">2–6 day delivery</strong>
-            <p class="text-gray-600">Express slots for events.</p>
-          </div>
-        </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Services</h4>
+        <ul class="text-sm space-y-2">
+          <li><a href="/services/saree-upcycling/" class="hover:text-[#F59E0B]">Saree Upcycling</a></li>
+          <li><a href="/services/maxi-gown/" class="hover:text-[#F59E0B]">Maxi & Gown</a></li>
+          <li><a href="/services/aari-work/" class="hover:text-[#F59E0B]">Aari Work</a></li>
+        </ul>
       </div>
-    </section>
-
-    <section class="py-14">
-      <div class="max-w-6xl mx-auto px-6 grid gap-6 md:grid-cols-2">
-        <article class="service-card rounded-3xl p-8 bg-white">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-purple-100 text-[var(--brand-purple)]"><i class="fas fa-shirt"></i></div>
-            <div>
-              <p class="text-xs uppercase tracking-[0.3em] text-gray-400">Kurti Sets</p>
-              <h2 class="text-2xl font-bold">Saree → Kurti</h2>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">Statement yokes, kali patterns, and border placements that preserve the saree story.</p>
-          <ul class="text-sm text-gray-600 space-y-2 mb-6">
-            <li>• Includes lining, facing, hem finishing</li>
-            <li>• Delivery in 3–5 days</li>
-          </ul>
-          <a href="/services/saree-upcycling/saree-to-kurti/" class="inline-flex items-center gap-2 text-[var(--brand-pink)] font-semibold">View details <i class="fas fa-arrow-right text-sm"></i></a>
-        </article>
-
-        <article class="service-card rounded-3xl p-8 bg-white">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-pink-100 text-[var(--brand-purple)]"><i class="fas fa-star"></i></div>
-            <div>
-              <p class="text-xs uppercase tracking-[0.3em] text-gray-400">Festive Sets</p>
-              <h2 class="text-2xl font-bold">Saree → Lehenga</h2>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">Panelled lehenga, can-can options, matching blouses, and dupatta trims reused from the saree.</p>
-          <ul class="text-sm text-gray-600 space-y-2 mb-6">
-            <li>• Includes waistband finishing + lining</li>
-            <li>• Delivery in 4–7 days</li>
-          </ul>
-          <a href="/services/saree-upcycling/saree-to-lehenga/" class="inline-flex items-center gap-2 text-[var(--brand-pink)] font-semibold">View details <i class="fas fa-arrow-right text-sm"></i></a>
-        </article>
-
-        <article class="service-card rounded-3xl p-8 bg-white">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-amber-100 text-[var(--brand-purple)]"><i class="fas fa-rectangle-landscape"></i></div>
-            <div>
-              <p class="text-xs uppercase tracking-[0.3em] text-gray-400">Maxi & Gowns</p>
-              <h2 class="text-2xl font-bold">Saree → Maxi</h2>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">Structured bodice with flowing skirt using pallu borders as statement panels.</p>
-          <ul class="text-sm text-gray-600 space-y-2 mb-6">
-            <li>• Includes bodice boning option</li>
-            <li>• Delivery in 4–6 days</li>
-          </ul>
-          <a href="/services/saree-upcycling/saree-to-maxi/" class="inline-flex items-center gap-2 text-[var(--brand-pink)] font-semibold">View details <i class="fas fa-arrow-right text-sm"></i></a>
-        </article>
-
-        <article class="service-card rounded-3xl p-8 bg-white">
-          <div class="flex items-center gap-4 mb-4">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center bg-blue-100 text-[var(--brand-purple)]"><i class="fas fa-layer-group"></i></div>
-            <div>
-              <p class="text-xs uppercase tracking-[0.3em] text-gray-400">Bridal Ready</p>
-              <h2 class="text-2xl font-bold">Saree Pre-Pleating</h2>
-            </div>
-          </div>
-          <p class="text-gray-600 mb-4">Precision pleats fixed to the fall, hip marker clips, and travel-friendly packing.</p>
-          <ul class="text-sm text-gray-600 space-y-2 mb-6">
-            <li>• Includes fall & pico finishing</li>
-            <li>• Delivery in 24–48 hrs</li>
-          </ul>
-          <a href="/services/saree-upcycling/saree-prepleating/" class="inline-flex items-center gap-2 text-[var(--brand-pink)] font-semibold">View details <i class="fas fa-arrow-right text-sm"></i></a>
-        </article>
+      <div>
+        <h4 class="text-white font-bold mb-4">Quick Links</h4>
+        <ul class="text-sm space-y-2">
+          <li><a href="/" class="hover:text-[#F59E0B]">Home</a></li>
+          <li><a href="/about/" class="hover:text-[#F59E0B]">About</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[#F59E0B]">Courses</a></li>
+        </ul>
       </div>
-    </section>
-
-    <section class="py-14 bg-gradient-to-r from-[#500C59] via-[#7d3470] to-[#BF637C] text-white">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <p class="uppercase tracking-[0.4em] text-xs text-white/70 mb-4">WhatsApp Consults</p>
-        <h3 class="text-3xl font-bold mb-4">Share your saree photos, receive makeover options in minutes.</h3>
-        <p class="text-white/80 mb-6">We map motifs digitally and send back sketch ideas + accurate pricing.</p>
-        <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20want%20to%20upcycle%20a%20saree" class="inline-flex items-center gap-3 px-6 py-3 bg-white/10 border border-white/30 rounded-xl font-semibold">
-          <i class="fab fa-whatsapp text-2xl"></i>
-          Chat on WhatsApp
-        </a>
+      <div>
+        <h4 class="text-white font-bold mb-4">Contact</h4>
+        <p class="text-sm">Email: saravn.ent@gmail.com</p>
+        <p class="text-sm">Phone: +91 99527 49408</p>
       </div>
-    </section>
-  </main>
-
-  <footer class="bg-[#1D0259] text-gray-300 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-4 gap-8 mb-8">
-        <div>
-          <h4 class="text-white font-bold mb-3">✨ Prajus Designs</h4>
-          <p class="text-sm">Premium boutique tailoring & aari embroidery studio based in Chennai.</p>
-        </div>
-        <div>
-          <h4 class="text-white font-bold mb-3">Services</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-[var(--brand-yellow)]" href="/services/saree-upcycling/">Saree Upcycling</a></li>
-            <li><a class="hover:text-[var(--brand-yellow)]" href="/services/maxi-gown/">Maxi & Gown</a></li>
-            <li><a class="hover:text-[var(--brand-yellow)]" href="/services/aari-work/">Aari Work</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white font-bold mb-3">Quick Links</h4>
-          <ul class="space-y-2 text-sm">
-            <li><a class="hover:text-[var(--brand-yellow)]" href="/">Home</a></li>
-            <li><a class="hover:text-[var(--brand-yellow)]" href="/about/">About</a></li>
-            <li><a class="hover:text-[var(--brand-yellow)]" href="/aari-courses/">Courses</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-white font-bold mb-3">Contact</h4>
-          <p class="text-sm">WhatsApp: +91 99527 49408</p>
-          <p class="text-sm">Studio: Perungalathur, Chennai</p>
-        </div>
-      </div>
-      <div class="border-t border-white/10 pt-6 text-sm text-center">© 2025 Prajus Designs. All rights reserved.</div>
     </div>
-  </footer>
+    <div class="border-t border-gray-700 pt-8 text-center">
+      <p class="text-sm">© 2025 Prajus Designs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Call Button -->
+<a href="tel:+919952749408" class="float-cta" >
+  <i class="fas fa-phone text-2xl"></i>
+</a>
+
 </body>
 </html>
+
+
+
+

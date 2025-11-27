@@ -5,93 +5,152 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Maxi & Gown — Prajus Designs</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(80, 12, 89, 0.15); }
-    .btn-primary { background: linear-gradient(135deg, #500C59 0%, #BF637C 100%); transition: all 0.3s; color: white; }
-    .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(80, 12, 89, 0.3); }
-    .float-cta { position: fixed; bottom: 30px; right: 30px; z-index: 40; animation: bounce 2s infinite; }
-    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-  </style>
+  
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body class="bg-white text-gray-800">
 
 <!-- Navbar -->
-<header class="bg-white border-b-2 border-purple-200 sticky top-0 z-50">
-  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <a href="/" class="text-2xl font-bold" style="color: #500C59;">✨ Prajus Designs</a>
-    <ul class="flex gap-8 font-medium text-gray-700">
-      <li><a href="/" class="hover:text-[#BF637C] transition">Home</a></li>
-      <li><a href="/about/" class="hover:text-[#BF637C] transition">About</a></li>
-      <li><a href="/services/" class="hover:text-[#BF637C] transition">Services</a></li>
-      <li><a href="/aari-courses/" class="hover:text-[#BF637C] transition">Courses</a></li>
-    </ul>
-  </nav>
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <nav class="flex items-center justify-between py-4">
+      <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
+        <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
+      </a>
+      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-menu" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
+        <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
+        <li><a href="/services/" class="hover:text-[#1D0259] transition">Services</a></li>
+        <li><a href="/about/" class="hover:text-[#1D0259] transition">About</a></li>
+        <li><a href="/aari-courses/" class="hover:text-[#1D0259] transition">Courses</a></li>
+        <li><a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm">WhatsApp</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col gap-4 pb-4 text-gray-700 font-medium" data-nav-mobile>
+      <a href="/" class="border-b pb-2">Home</a>
+      <a href="/services/" class="border-b pb-2">Services</a>
+      <a href="/about/" class="border-b pb-2">About</a>
+      <a href="/aari-courses/" class="border-b pb-2">Courses</a>
+      <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question" class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-white font-semibold">WhatsApp</a>
+    </div>
+  </div>
 </header>
 
-<!-- Hero Section -->
-<section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h1 class="text-5xl font-bold text-gray-900 mb-4">Maxi & Gown Collections</h1>
-    <p class="text-xl text-gray-600">Elegant designs for every occasion</p>
+
+<main>
+
+<!-- Hero -->
+<section class="section-gradient relative py-16 bg-gray-50">
+  <img src="https://images.pexels.com/photos/214702/pexels-photo-214702.jpeg?auto=compress&cs=tinysrgb&w=1600"
+       alt="Woman in flowing pastel gown walking outdoors"
+       class="absolute inset-0 w-full h-full object-cover opacity-15" loading="lazy" decoding="async">
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-3 text-sm mb-3">
+      <a href="/services/" class="text-brand hover:underline">Services</a>
+      <span>/</span>
+      <span class="text-gray-600">Maxi & Gown</span>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-3">
+      Bespoke Maxi Dresses & Couture Gowns
+    </h1>
+    <p class="text-lg text-gray-700">Perfect drape • Hidden corsetry • Premium finishing</p>
   </div>
 </section>
 
-<!-- Service Grid -->
+<!-- Collections -->
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Collection 1 -->
-      <a href="/services/maxi-gown/circular-maxi/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-circle text-xl" style="color: #500C59;"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900">Circular Maxi</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Beautifully flowing circular designs with 360-degree drape for an elegant silhouette.</p>
-        <span class="font-semibold" style="color: #BF637C;">Explore →</span>
-      </a>
+    <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Signature Styles We Tailor</h2>
+    <div class="grid md:grid-cols-2 gap-10">
 
-      <!-- Collection 2 -->
-      <a href="/services/maxi-gown/straight-maxi/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-rectangle-landscape text-xl" style="color: #500C59;"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900">Straight Maxi</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Classic straight-cut designs with modern tailoring for a sleek, sophisticated look.</p>
-        <span class="font-semibold" style="color: #BF637C;">Explore →</span>
-      </a>
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/214702/pexels-photo-214702.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Full-circle blush maxi dress twirling in motion"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Circular Maxi</h3>
+        <p class="service-card__meta">Starting at ₹3,800</p>
+        <p class="text-gray-700">360° flare with layered can-can, perfect for sangeet nights and cocktails.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Built-in can-can & detachable trails</li>
+          <li>✔ Optional hand embroidery on yoke</li>
+          <li>✔ Invisible zipper and structured bodice</li>
+        </ul>
+        <a class="text-brand font-semibold" href="/services/maxi-gown/circular-maxi/">View Collection →</a>
+      </div>
 
-      <!-- Collection 3 -->
-      <a href="/services/maxi-gown/lehenga-maxi/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: #C4C7F2;">
-            <i class="fas fa-star text-xl" style="color: #500C59;"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900">Lehenga-Style Maxi</h3>
-        </div>
-        <p class="text-gray-600 mb-4">Fusion designs combining lehenga silhouettes with modern maxi length for festive elegance.</p>
-        <span class="font-semibold" style="color: #BF637C;">Explore →</span>
-      </a>
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/2167673/pexels-photo-2167673.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Woman wearing a sleek emerald straight gown"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Straight Maxi</h3>
+        <p class="service-card__meta">Starting at ₹3,200</p>
+        <p class="text-gray-700">Minimal silhouettes with princess seams, thigh-high slits and cape options.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Fully lined, breathable fabrics</li>
+          <li>✔ Convertible cape / shrug pairing</li>
+          <li>✔ Bust cups and corset support available</li>
+        </ul>
+        <a class="text-brand font-semibold" href="/services/maxi-gown/straight-maxi/">View Collection →</a>
+      </div>
+
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/1484799/pexels-photo-1484799.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Bridal lehenga style gown with rich embroidery"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Lehenga-MaxI Fusion</h3>
+        <p class="service-card__meta">Starting at ₹4,500</p>
+        <p class="text-gray-700">Panel-cut volume with embroidered belts, dupatta drapes and tasselled backs.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Grand can-can & horsehair finishing</li>
+          <li>✔ Mirror, zardosi or thread options</li>
+          <li>✔ Coordinated groom pocket square</li>
+        </ul>
+        <a class="text-brand font-semibold" href="/services/maxi-gown/lehenga-maxi/">View Collection →</a>
+      </div>
+
+      <div class="service-card service-card--media card-hover">
+        <img src="https://images.pexels.com/photos/326559/pexels-photo-326559.jpeg?auto=compress&cs=tinysrgb&w=1100"
+             alt="Sparkling evening gown on mannequin"
+             class="mb-2" loading="lazy" decoding="async">
+        <h3 class="text-2xl font-bold">Reception Gowns</h3>
+        <p class="service-card__meta">Starting at ₹5,500</p>
+        <p class="text-gray-700">Hand beaded luxe gowns with detachable overskirts, gloves and veils.</p>
+        <ul class="text-gray-700 text-sm space-y-2">
+          <li>✔ Swarovski, pearls & feather trims</li>
+          <li>✔ Custom neckline + sleeve prototyping</li>
+          <li>✔ On-site steaming & dressing support</li>
+        </ul>
+        <a class="text-brand font-semibold" href="/services/maxi-gown/">Plan Your Look →</a>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- CTA Section -->
+<!-- CTA -->
 <section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold text-gray-900 mb-4">Find Your Perfect Maxi</h2>
-    <p class="text-xl text-gray-600 mb-8">Custom designs tailored to your style and measurements</p>
-    <a href="tel:+919876543210" class="btn-primary px-8 py-3 rounded-lg font-semibold inline-block">Contact Us</a>
+    <h2 class="text-4xl font-bold text-gray-900 mb-4">Ready to Plan Your Maxi or Gown?</h2>
+    <p class="text-xl text-gray-700 mb-8">Message us on WhatsApp with event dates and references—we’ll reply with sketches and timelines.</p>
+    <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20have%20a%20question"
+       class="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl text-white"
+       style="background-color: #25D366;">
+      <i class="fab fa-whatsapp text-2xl"></i>
+      Chat on WhatsApp
+    </a>
   </div>
 </section>
 
+</main>
+
 <!-- Footer -->
-<footer style="background-color: #1D0259;" class="text-gray-300 py-12">
+<footer class="bg-gray-900 text-gray-300 py-12">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid md:grid-cols-4 gap-8 mb-8">
       <div>
@@ -101,23 +160,23 @@
       <div>
         <h4 class="text-white font-bold mb-4">Services</h4>
         <ul class="text-sm space-y-2">
-          <li><a href="/services/" class="hover:text-[#F2E96B]">All Services</a></li>
-          <li><a href="/services/maxi-gown/" class="hover:text-[#F2E96B]">Maxi & Gown</a></li>
-          <li><a href="/services/aari-work/" class="hover:text-[#F2E96B]">Aari Work</a></li>
+          <li><a href="/services/blouse-designs/" class="hover:text-[#1D0259]">Blouse Designs</a></li>
+          <li><a href="/services/maxi-gown/" class="hover:text-[#1D0259]">Maxi Gown</a></li>
+          <li><a href="/services/aari-work/" class="hover:text-[#1D0259]">Aari Work</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold mb-4">Quick Links</h4>
         <ul class="text-sm space-y-2">
-          <li><a href="/" class="hover:text-[#F2E96B]">Home</a></li>
-          <li><a href="/about/" class="hover:text-[#F2E96B]">About</a></li>
-          <li><a href="/aari-courses/" class="hover:text-[#F2E96B]">Courses</a></li>
+          <li><a href="/" class="hover:text-[#1D0259]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[#1D0259]">Services</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[#1D0259]">Courses</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold mb-4">Contact</h4>
-        <p class="text-sm">Email: info@prajusdesigns.com</p>
-        <p class="text-sm">Phone: +91 XXXXXXXXXX</p>
+        <p class="text-sm">Email: saravn.ent@gmail.com</p>
+        <p class="text-sm">Phone: +91 99527 49408</p>
       </div>
     </div>
     <div class="border-t border-gray-700 pt-8 text-center">
@@ -127,9 +186,13 @@
 </footer>
 
 <!-- Floating Call Button -->
-<a href="tel:+919876543210" class="float-cta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg" style="background-color: #1A73E8;">
+<a href="tel:+919952749408" class="float-cta" >
   <i class="fas fa-phone text-2xl"></i>
 </a>
 
 </body>
 </html>
+
+
+
+
