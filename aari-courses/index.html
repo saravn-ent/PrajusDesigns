@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aari Courses — Prajus Designs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(80, 12, 89, 0.15); }
+    .btn-primary { background: linear-gradient(135deg, #500C59 0%, #BF637C 100%); transition: all 0.3s; color: white; }
+    .btn-primary:hover { transform: scale(1.05); box-shadow: 0 8px 16px rgba(80, 12, 89, 0.3); }
+    .float-cta { position: fixed; bottom: 30px; right: 30px; z-index: 40; animation: bounce 2s infinite; }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Navbar -->
+<header class="bg-white border-b-2 border-purple-200 sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a href="/" class="text-2xl font-bold" style="color: #500C59;">✨ Prajus Designs</a>
+    <ul class="flex gap-8 font-medium text-gray-700">
+      <li><a href="/" class="hover:text-[#BF637C] transition">Home</a></li>
+      <li><a href="/about/" class="hover:text-[#BF637C] transition">About</a></li>
+      <li><a href="/services/" class="hover:text-[#BF637C] transition">Services</a></li>
+      <li><a href="/aari-courses/" class="hover:text-[#BF637C] transition">Courses</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-5xl font-bold text-gray-900 mb-4">Learn Aari Embroidery</h1>
+    <p class="text-xl text-gray-600">Master traditional aari techniques from expert artisans</p>
+  </div>
+</section>
+
+<!-- Courses Grid -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <!-- Course 1 -->
+      <a href="/aari-courses/basic-to-advanced/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-6">
+        <div class="mb-4">
+          <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #C4C7F2; color: #500C59;">Beginner to Pro</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Basic to Advanced</h3>
+        <p class="text-gray-600 mb-4">Master fundamental & advanced aari techniques in progressive modules.</p>
+        <div class="flex items-center gap-2 font-semibold" style="color: #BF637C;">
+          <span>Enroll Now</span> <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Course 2 -->
+      <a href="/aari-courses/5d-patchwork-course/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-6">
+        <div class="mb-4">
+          <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #C4C7F2; color: #500C59;">Advanced</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">5D Patchwork</h3>
+        <p class="text-gray-600 mb-4">Create stunning 3D & 5D patchwork designs with precision aari work.</p>
+        <div class="flex items-center gap-2 font-semibold" style="color: #BF637C;">
+          <span>Enroll Now</span> <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Course 3 -->
+      <a href="/aari-courses/bridal-aari-course/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-6">
+        <div class="mb-4">
+          <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #C4C7F2; color: #500C59;">Premium</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Bridal Aari</h3>
+        <p class="text-gray-600 mb-4">Learn exquisite bridal aari embroidery & advanced decorative techniques.</p>
+        <div class="flex items-center gap-2 font-semibold" style="color: #BF637C;">
+          <span>Enroll Now</span> <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Course 4 -->
+      <a href="/aari-courses/pre-pleating-course/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-6">
+        <div class="mb-4">
+          <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #C4C7F2; color: #500C59;">Specialized</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Pre-pleating</h3>
+        <p class="text-gray-600 mb-4">Master the art of saree pre-pleating for perfect folds & draping.</p>
+        <div class="flex items-center gap-2 font-semibold" style="color: #BF637C;">
+          <span>Enroll Now</span> <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Course 5 -->
+      <a href="/aari-courses/blouse-model-making/" class="card-hover bg-white border-2 border-[#BF637C] rounded-2xl p-6">
+        <div class="mb-4">
+          <span class="inline-block px-3 py-1 rounded-full text-sm font-semibold" style="background-color: #C4C7F2; color: #500C59;">Intermediate</span>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Blouse Model Making</h3>
+        <p class="text-gray-600 mb-4">Design & construct custom blouse models with professional patterns.</p>
+        <div class="flex items-center gap-2 font-semibold" style="color: #BF637C;">
+          <span>Enroll Now</span> <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Learn Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Why Choose Our Courses?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl border border-gray-200">
+        <i class="fas fa-award text-4xl mb-4" style="color: #BF637C;"></i>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Expert Instructors</h3>
+        <p class="text-gray-600">Learn from seasoned artisans with decades of aari embroidery experience.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-gray-200">
+        <i class="fas fa-graduation-cap text-4xl mb-4" style="color: #BF637C;"></i>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Comprehensive Training</h3>
+        <p class="text-gray-600">From basic stitches to advanced bridal designs, all in structured modules.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-gray-200">
+        <i class="fas fa-certificate text-4xl mb-4" style="color: #BF637C;"></i>
+        <h3 class="text-xl font-bold text-gray-900 mb-3">Certification</h3>
+        <p class="text-gray-600">Earn recognized certificates upon course completion with portfolio projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16" style="background: linear-gradient(135deg, #C4C7F2 0%, #F2E96B 100%);">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-4">Ready to Master Aari Art?</h2>
+    <p class="text-xl text-gray-600 mb-8">Enroll now and start your journey as an aari artisan</p>
+    <a href="tel:+919876543210" class="btn-primary px-8 py-3 rounded-lg font-semibold inline-block">Get Started</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color: #1D0259;" class="text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <h4 class="text-white font-bold mb-4">✨ Prajus Designs</h4>
+        <p class="text-sm">Premium boutique tailoring & aari embroidery studio.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Courses</h4>
+        <ul class="text-sm space-y-2">
+          <li><a href="/aari-courses/basic-to-advanced/" class="hover:text-[#F2E96B]">Basic to Advanced</a></li>
+          <li><a href="/aari-courses/bridal-aari-course/" class="hover:text-[#F2E96B]">Bridal Aari</a></li>
+          <li><a href="/aari-courses/5d-patchwork-course/" class="hover:text-[#F2E96B]">5D Patchwork</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Quick Links</h4>
+        <ul class="text-sm space-y-2">
+          <li><a href="/" class="hover:text-[#F2E96B]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[#F2E96B]">Services</a></li>
+          <li><a href="/about/" class="hover:text-[#F2E96B]">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-4">Contact</h4>
+        <p class="text-sm">Email: info@prajusdesigns.com</p>
+        <p class="text-sm">Phone: +91 XXXXXXXXXX</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 pt-8 text-center">
+      <p class="text-sm">© 2025 Prajus Designs. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Call Button -->
+<a href="tel:+919876543210" class="float-cta text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg" style="background-color: #1A73E8;">
+  <i class="fas fa-phone text-2xl"></i>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kids Frock — Prajus Designs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --brand-mint:#4CC9B4;
+      --brand-pink:#FF89A3;
+      --cta-green:#25D366;
+    }
+    .gallery-btn{background:white;border-radius:9999px;width:42px;height:42px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(15,23,42,0.1);} 
+    .img-placeholder{background:linear-gradient(135deg,#fce7f3,#dbeafe);border-radius:1.5rem;height:200px;width:100%;}
+    @media(max-width:640px){.img-placeholder{height:150px;}}
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold" style="color:var(--brand-mint)">✨ Prajus Designs</a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm text-gray-700">
+          <li><a href="/" class="hover:text-[var(--brand-pink)]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[var(--brand-pink)]">Services</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[var(--brand-pink)]">Courses</a></li>
+          <li><a href="/about/" class="hover:text-[var(--brand-pink)]">About</a></li>
+        </ul>
+      </nav>
+      <button aria-label="Menu" class="md:hidden text-gray-700 text-xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-br from-pink-50 via-white to-sky-50 py-16">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="uppercase text-xs tracking-[0.35em] text-[var(--brand-mint)]">twirl-ready frocks</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Custom Kids Frocks</h1>
+        <p class="text-lg text-gray-700">Birthday, naming, and festive frocks with breathable linings, adjustable closures, and playful trims that keep kids comfy all day.</p>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold">Gallery — Swirls & Smiles</h2>
+          <div class="flex gap-3">
+            <button id="gallery-prev" class="gallery-btn" aria-label="Previous"><i class="fas fa-chevron-left text-sm text-gray-700"></i></button>
+            <button id="gallery-next" class="gallery-btn" aria-label="Next"><i class="fas fa-chevron-right text-sm text-gray-700"></i></button>
+          </div>
+        </div>
+        <div id="gallery" class="overflow-hidden">
+          <div class="flex gap-6 w-max">
+            <figure class="min-w-[300px] sm:min-w-[340px] bg-white rounded-3xl p-4 border shadow-sm">
+              <div class="img-placeholder" role="img" aria-label="Tulle frock placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Layered tulle frock</div>
+                <div class="text-sm text-gray-500">Pearl neckline</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[340px] bg-white rounded-3xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Floral cotton dress placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Floral cotton day dress</div>
+                <div class="text-sm text-gray-500">Pocket detail</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[340px] bg-white rounded-3xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Sequins yoke dress placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Sequins yoke dress</div>
+                <div class="text-sm text-gray-500">Soft georgette layers</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[340px] bg-white rounded-3xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Peter pan collar frock placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Peter Pan collar frock</div>
+                <div class="text-sm text-gray-500">Contrast piping</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 border-y">
+      <div class="max-w-5xl mx-auto px-6 grid gap-4 md:grid-cols-3 text-sm text-gray-700">
+        <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
+          <i class="fas fa-feather text-[var(--brand-mint)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-mint)]">Feather-light fabrics</strong>
+            <p class="text-gray-600">Cotton satin, soft silk, net with lining.</p>
+          </div>
+        </article>
+        <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
+          <i class="fas fa-expand-arrows-alt text-[var(--brand-mint)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-mint)]">Growth allowance</strong>
+            <p class="text-gray-600">Hidden seams and adjusters.</p>
+          </div>
+        </article>
+        <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
+          <i class="fas fa-sparkles text-[var(--brand-mint)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-mint)]">Custom trims</strong>
+            <p class="text-gray-600">Lace, bows, embroidery, pockets.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-xl font-bold mb-6">What you get</h3>
+        <ul class="grid sm:grid-cols-2 gap-5 text-gray-700">
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Measurement profile + silhouette guide to choose flare, sleeve, and neck style.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Fabric sourcing help or stitching on supplied fabric with color-matched notions.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Soft cotton lining, covered seams, and comfort zips/snaps for easy wear.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Final steam press plus accessory suggestions (hairbands, belts, brooch).</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-4">Pricing</h3>
+        <div class="bg-white rounded-3xl border shadow-md p-6 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p class="text-sm text-gray-500">Signature Frock Package</p>
+            <p class="text-3xl font-extrabold text-[var(--brand-mint)]">₹880</p>
+            <p class="text-xs text-gray-500">Includes sizes 1Y–10Y</p>
+          </div>
+          <p class="text-sm text-gray-600 max-w-sm">Design consult, pattern drafting, lining, finishing, and one fit tweak included.</p>
+        </div>
+        <div class="bg-white rounded-3xl border shadow-md p-6">
+          <p class="font-semibold text-gray-700 mb-4">Optional upgrades</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="text-left text-gray-600">
+                  <th class="py-2 pr-4">Add-on</th>
+                  <th class="py-2 pr-4">Price</th>
+                  <th class="py-2">Details</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Hand smocking panel</td>
+                  <td class="py-3 pr-4">₹320</td>
+                  <td class="py-3">Front or back smocking detail.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">3D flower appliques</td>
+                  <td class="py-3 pr-4">₹280</td>
+                  <td class="py-3">Organza petals + pearls.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Coordinated hair accessory</td>
+                  <td class="py-3 pr-4">₹150</td>
+                  <td class="py-3">Clip or headband.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Detachable tutu layer</td>
+                  <td class="py-3 pr-4">₹260</td>
+                  <td class="py-3">Buttons inside waist.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Express 36-hr slot</td>
+                  <td class="py-3 pr-4">₹420</td>
+                  <td class="py-3">Limited rush orders.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm text-gray-500 mt-4">Pricing for Chennai studio; courier available on request.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold mb-3">Planning a themed party look?</h3>
+        <p class="text-gray-700 mb-6">Drop your theme, colors, and size on WhatsApp. We reply with sketch + delivery timeline.</p>
+        <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20need%20a%20custom%20kids%20frock" class="inline-flex items-center gap-3 px-7 py-3 rounded-lg text-white text-lg font-semibold" style="background:var(--cta-green)">
+          <i class="fab fa-whatsapp text-2xl"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1D0259] text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="text-white font-bold mb-3">✨ Prajus Designs</h4>
+          <p class="text-sm">Premium boutique tailoring & aari embroidery studio based in Chennai.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-[#F2E96B]" href="/services/aari-work/">Aari Work</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/services/maxi-gown/">Maxi & Gown</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/services/saree-upcycling/">Saree Upcycling</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-[#F2E96B]" href="/">Home</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/about/">About</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/aari-courses/">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Contact</h4>
+          <p class="text-sm">WhatsApp: +91 99527 49408</p>
+          <p class="text-sm">Studio: Perungalathur, Chennai</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-sm text-center">© 2025 Prajus Designs. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const gallery=document.getElementById("gallery");
+      const track=gallery?.querySelector(".flex");
+      const prev=document.getElementById("gallery-prev");
+      const next=document.getElementById("gallery-next");
+      if(!gallery||!track||!prev||!next) return;
+      let scrollPosition=0;
+      const cardWidth=track.firstElementChild?.getBoundingClientRect().width||300;
+      const step=cardWidth+24;
+      const maxScroll=Math.max(track.scrollWidth-gallery.clientWidth,0);
+      const updateScroll=()=>{ track.style.transform=`translateX(${-scrollPosition}px)`; };
+      prev.addEventListener("click",()=>{ scrollPosition=Math.max(scrollPosition-step,0); updateScroll(); });
+      next.addEventListener("click",()=>{ scrollPosition=Math.min(scrollPosition+step,maxScroll); updateScroll(); });
+      let startX=0,startScroll=0,isDragging=false;
+      gallery.addEventListener("pointerdown",e=>{ isDragging=true; startX=e.clientX; startScroll=scrollPosition; gallery.setPointerCapture(e.pointerId); });
+      gallery.addEventListener("pointermove",e=>{ if(!isDragging) return; const delta=e.clientX-startX; scrollPosition=Math.min(Math.max(startScroll-delta,0),maxScroll); updateScroll(); });
+      gallery.addEventListener("pointerup",e=>{ if(!isDragging) return; isDragging=false; gallery.releasePointerCapture(e.pointerId); });
+      gallery.addEventListener("pointerleave",()=>{ isDragging=false; });
+    })();
+  </script>
+</body>
+</html>

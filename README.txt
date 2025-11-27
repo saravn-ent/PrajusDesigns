@@ -1,0 +1,1 @@
+Open index.html in browser. Deploy to Netlify by dragging the folder to Netlify Drop or push to Git and connect.

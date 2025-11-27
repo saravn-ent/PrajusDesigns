@@ -1,0 +1,9 @@
+{
+  "name": "prajusdesigns",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css",
+    "watch:css": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  }
+}

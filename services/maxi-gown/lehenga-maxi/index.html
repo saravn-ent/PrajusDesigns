@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lehenga Maxi — Prajus Designs</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --brand-purple:#500C59;
+      --brand-pink:#BF637C;
+      --price-green:#15803d;
+      --whatsapp-green:#25D366;
+    }
+    .gallery-btn { background:white; border-radius:9999px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(15,23,42,0.08); border:1px solid rgba(0,0,0,0.05); }
+    .img-placeholder { background:linear-gradient(180deg,#fdf2f8,#fce7f3); border-radius:1rem; height:190px; width:100%; }
+    @media(max-width:640px){ .img-placeholder{ height:150px; } }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold" style="color:var(--brand-purple)">✨ Prajus Designs</a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm text-gray-700">
+          <li><a href="/" class="hover:text-[var(--brand-pink)]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[var(--brand-pink)]">Services</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[var(--brand-pink)]">Courses</a></li>
+          <li><a href="/about/" class="hover:text-[var(--brand-pink)]">About</a></li>
+        </ul>
+      </nav>
+      <button aria-label="Menu" class="md:hidden text-gray-700 text-xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="bg-gradient-to-r from-fuchsia-100 via-pink-50 to-yellow-50 py-16">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Lehenga-Style Maxi Gowns</h1>
+        <p class="text-lg text-gray-700">Banarasi flare + modern bodice. Perfect for sangeet, reception, and mehendi twirls.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="py-10">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold">Gallery — Lehenga Maxi Looks</h2>
+          <div class="flex gap-3">
+            <button id="gallery-prev" class="gallery-btn" aria-label="Previous"><i class="fas fa-chevron-left text-sm text-gray-700"></i></button>
+            <button id="gallery-next" class="gallery-btn" aria-label="Next"><i class="fas fa-chevron-right text-sm text-gray-700"></i></button>
+          </div>
+        </div>
+        <div id="gallery" class="overflow-hidden">
+          <div class="flex gap-6 w-max">
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" role="img" aria-label="Kanjivaram lehenga maxi placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Kanjivaram flare</div>
+                <div class="text-sm text-gray-500">Banarasi skirt + silk yoke</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Mirror yoke maxi placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Mirror yoke</div>
+                <div class="text-sm text-gray-500">Pastel ombré skirt</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Cape lehenga maxi placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Cape + trail set</div>
+                <div class="text-sm text-gray-500">Detachable organza cape</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Kids lehenga maxi placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Mini lehenga maxi</div>
+                <div class="text-sm text-gray-500">Birthday shoot outfit</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Sequinned lehenga maxi placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Sequinned reception gown</div>
+                <div class="text-sm text-gray-500">Structured shoulders</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="py-6 border-y">
+      <div class="max-w-5xl mx-auto px-6 grid gap-4 sm:grid-cols-3 text-sm text-gray-700">
+        <div class="bg-white border rounded-xl px-4 py-3 shadow-sm flex items-start gap-3">
+          <i class="fas fa-circle-notch text-[var(--brand-purple)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-purple)]">7+ meter flare</strong>
+            <p class="text-gray-600">Choose can-can intensity & layers.</p>
+          </div>
+        </div>
+        <div class="bg-white border rounded-xl px-4 py-3 shadow-sm flex items-start gap-3">
+          <i class="fas fa-gem text-[var(--brand-purple)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-purple)]">Statement yokes</strong>
+            <p class="text-gray-600">Mirror, thread or hand-cut appliqué.</p>
+          </div>
+        </div>
+        <div class="bg-white border rounded-xl px-4 py-3 shadow-sm flex items-start gap-3">
+          <i class="fas fa-stopwatch text-[var(--brand-purple)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-purple)]">5–7 day delivery</strong>
+            <p class="text-gray-600">Express 72-hr slots on request.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU GET -->
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-xl font-bold mb-4">What you get</h3>
+        <ul class="grid sm:grid-cols-2 gap-4 text-gray-700">
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Silhouette planning session to balance bodice fit with lehenga flare.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Premium lining + can-can/cotton fall as per dance comfort.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Hidden zips, lace-up or corset-style closure with modesty panel.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>One trial fitting & steaming before pickup/delivery.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-4">Pricing</h3>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p class="text-sm text-gray-500">Lehenga Maxi Tailoring</p>
+            <p class="text-3xl font-extrabold" style="color:var(--price-green)">₹2,150</p>
+          </div>
+          <p class="text-sm text-gray-600 max-w-sm">Includes pattern drafting, lining, concealed zip/corset finish, and one fitting session.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
+          <p class="font-semibold text-gray-700 mb-4">Popular add-ons</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm table-auto border-collapse">
+              <thead>
+                <tr class="text-left text-gray-600">
+                  <th class="py-2 pr-4">Add-on</th>
+                  <th class="py-2 pr-4">Price</th>
+                  <th class="py-2">Notes</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Detachable dupatta/cape</td>
+                  <td class="py-3 pr-4">₹380</td>
+                  <td class="py-3">Organza/net with bead edging.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Heavy can-can upgrade</td>
+                  <td class="py-3 pr-4">₹320</td>
+                  <td class="py-3">Two-tier flare booster.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Hand embellishment yoke</td>
+                  <td class="py-3 pr-4">₹420</td>
+                  <td class="py-3">Mirror/stone detailing on bodice.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Corset boning</td>
+                  <td class="py-3 pr-4">₹260</td>
+                  <td class="py-3">Steel/plastic boning for snatched waist.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Express 72-hr slot</td>
+                  <td class="py-3 pr-4">₹300</td>
+                  <td class="py-3">Subject to fabric availability.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm text-gray-500 mt-4">Prices indicated for Chennai studio orders. Final quote shared after fabric selection.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-14">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold mb-3">Ready to swirl in a lehenga maxi?</h3>
+        <p class="text-gray-700 mb-6">Share your saree or moodboard on WhatsApp. We reply with fabric pairing and timeline in minutes.</p>
+        <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20I%20need%20a%20Lehenga%20Maxi%20(₹2150)" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg text-white text-lg font-semibold shadow" style="background:var(--whatsapp-green);">
+          <i class="fab fa-whatsapp text-2xl"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1D0259] text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="text-white font-bold mb-4">✨ Prajus Designs</h4>
+          <p class="text-sm">Premium boutique tailoring & aari embroidery studio.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Services</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="/services/maxi-gown/" class="hover:text-[#F2E96B]">Back to Maxi Range</a></li>
+            <li><a href="/services/" class="hover:text-[#F2E96B]">All Services</a></li>
+            <li><a href="/aari-courses/" class="hover:text-[#F2E96B]">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Quick Links</h4>
+          <ul class="text-sm space-y-2">
+            <li><a href="/" class="hover:text-[#F2E96B]">Home</a></li>
+            <li><a href="/about/" class="hover:text-[#F2E96B]">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4">Contact</h4>
+          <p class="text-sm">Email: saravn.ent@gmail.com</p>
+          <p class="text-sm">Phone: +91 99527 49408</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 pt-8 text-center">
+        <p class="text-sm">© 2025 Prajus Designs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const container = document.querySelector('#gallery > div');
+      const prevBtn = document.getElementById('gallery-prev');
+      const nextBtn = document.getElementById('gallery-next');
+      if(!container || !prevBtn || !nextBtn) return;
+      const itemWidth = container.querySelector('figure').getBoundingClientRect().width + 24;
+      let scrollPos = 0;
+      nextBtn.addEventListener('click', () => {
+        scrollPos = Math.min(scrollPos + itemWidth, container.scrollWidth - container.clientWidth);
+        container.scrollTo({ left: scrollPos, behavior: 'smooth' });
+      });
+      prevBtn.addEventListener('click', () => {
+        scrollPos = Math.max(scrollPos - itemWidth, 0);
+        container.scrollTo({ left: scrollPos, behavior: 'smooth' });
+      });
+      let isDown = false, startX, scrollLeft;
+      const gallery = container;
+      gallery.addEventListener('pointerdown', (e) => {
+        isDown = true;
+        gallery.setPointerCapture(e.pointerId);
+        startX = e.clientX;
+        scrollLeft = gallery.scrollLeft;
+      });
+      gallery.addEventListener('pointermove', (e) => {
+        if(!isDown) return;
+        const dx = startX - e.clientX;
+        gallery.scrollLeft = scrollLeft + dx;
+      });
+      gallery.addEventListener('pointerup', () => { isDown = false; });
+      gallery.addEventListener('pointerleave', () => { isDown = false; });
+    })();
+  </script>
+</body>
+</html>

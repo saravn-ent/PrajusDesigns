@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bridal Aari Work — Prajus Designs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --brand-wine:#46001F;
+      --brand-gold:#F5A524;
+      --cta-green:#25D366;
+    }
+    .gallery-btn{background:white;border-radius:9999px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(15,23,42,0.12);} 
+    .img-placeholder{background:linear-gradient(135deg,#fff7ed,#fee2e2);border-radius:1.5rem;height:210px;width:100%;}
+    @media(max-width:640px){.img-placeholder{height:160px;}}
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold" style="color:var(--brand-wine)">✨ Prajus Designs</a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm text-gray-700">
+          <li><a href="/" class="hover:text-[var(--brand-gold)]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[var(--brand-gold)]">Services</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[var(--brand-gold)]">Courses</a></li>
+          <li><a href="/about/" class="hover:text-[var(--brand-gold)]">About</a></li>
+        </ul>
+      </nav>
+      <button aria-label="Menu" class="md:hidden text-gray-700 text-xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-br from-amber-50 via-rose-50 to-white py-16">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="uppercase text-xs tracking-[0.4em] text-[var(--brand-wine)]">bridal couture</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mt-4 mb-5">Luxury Bridal Aari Embroidery</h1>
+        <p class="text-lg text-gray-700">Grand necklines, heirloom back motifs, sleeve trails, and waist belts sculpted with kundan, pearls, crystals, and French knots.</p>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold">Gallery — Bridal Highlights</h2>
+          <div class="flex gap-3">
+            <button id="gallery-prev" class="gallery-btn" aria-label="Previous"><i class="fas fa-chevron-left text-sm text-gray-700"></i></button>
+            <button id="gallery-next" class="gallery-btn" aria-label="Next"><i class="fas fa-chevron-right text-sm text-gray-700"></i></button>
+          </div>
+        </div>
+        <div id="gallery" class="overflow-hidden">
+          <div class="flex gap-6 w-max">
+            <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
+              <div class="img-placeholder" role="img" aria-label="Temple back motif placeholder"></div>
+              <figcaption class="mt-4">
+                <div class="font-semibold">Temple back motif</div>
+                <div class="text-sm text-gray-500">Kemp stones + zari shading</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
+              <div class="img-placeholder" aria-label="Shoulder trail placeholder"></div>
+              <figcaption class="mt-4">
+                <div class="font-semibold">Shoulder trail sleeves</div>
+                <div class="text-sm text-gray-500">Cutdana + pearl strings</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
+              <div class="img-placeholder" aria-label="Waist belt placeholder"></div>
+              <figcaption class="mt-4">
+                <div class="font-semibold">Kamarband panel</div>
+                <div class="text-sm text-gray-500">Layered zari couching</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
+              <div class="img-placeholder" aria-label="Veil border placeholder"></div>
+              <figcaption class="mt-4">
+                <div class="font-semibold">Veil border</div>
+                <div class="text-sm text-gray-500">French knots + sequins</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[320px] sm:min-w-[360px] bg-white rounded-3xl p-4 border shadow-md">
+              <div class="img-placeholder" aria-label="Back tassel placeholder"></div>
+              <figcaption class="mt-4">
+                <div class="font-semibold">Heirloom tassel set</div>
+                <div class="text-sm text-gray-500">Custom silk + beads</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-10 border-y">
+      <div class="max-w-5xl mx-auto px-6 grid gap-4 md:grid-cols-3 text-sm text-gray-700">
+        <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
+          <i class="fas fa-crown text-[var(--brand-wine)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-wine)]">Bespoke motifs</strong>
+            <p class="text-gray-600">Initials, temple motifs, custom monograms.</p>
+          </div>
+        </article>
+        <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
+          <i class="fas fa-ring text-[var(--brand-wine)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-wine)]">Lux materials</strong>
+            <p class="text-gray-600">Kundan, Swarovski, double zari, resham.</p>
+          </div>
+        </article>
+        <article class="bg-white border rounded-2xl px-5 py-4 shadow-sm flex gap-3">
+          <i class="fas fa-clipboard-check text-[var(--brand-wine)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-wine)]">Milestone updates</strong>
+            <p class="text-gray-600">Design approval + mid-production review.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-xl font-bold mb-6">What you get</h3>
+        <ul class="grid sm:grid-cols-2 gap-5 text-gray-700">
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Consultation covering wedding looks, jewellery coordination, and motif references.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Artboard mockup with color palette, embellishment list, and measurement chart.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Material sourcing for kundan, crystals, beads, double zari, tassels, and lining.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Finishing with padding, back tie sets, steam press, and protective garment cover.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-4">Pricing</h3>
+        <div class="bg-white rounded-3xl border shadow-md p-6 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p class="text-sm text-gray-500">Bridal Grand Blouse Package</p>
+            <p class="text-3xl font-extrabold text-[var(--brand-wine)]">₹2,480</p>
+            <p class="text-xs text-gray-500">Includes front + back up to 2.5 ft coverage</p>
+          </div>
+          <p class="text-sm text-gray-600 max-w-sm">Detailed tracing, multi-layer materials, tassels, lining, and two refinement sessions.</p>
+        </div>
+        <div class="bg-white rounded-3xl border shadow-md p-6">
+          <p class="font-semibold text-gray-700 mb-4">Add-on couture elements</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="text-left text-gray-600">
+                  <th class="py-2 pr-4">Add-on</th>
+                  <th class="py-2 pr-4">Price</th>
+                  <th class="py-2">Details</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Veil / dupatta border</td>
+                  <td class="py-3 pr-4">₹1,350</td>
+                  <td class="py-3">Up to 2.5 m heavy border.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Custom waist belt</td>
+                  <td class="py-3 pr-4">₹950</td>
+                  <td class="py-3">Structured band with hooks.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Heirloom tassel set</td>
+                  <td class="py-3 pr-4">₹620</td>
+                  <td class="py-3">Handmade silk tassels + kundan drops.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Bridal robe monogram</td>
+                  <td class="py-3 pr-4">₹540</td>
+                  <td class="py-3">Initials embroidered for robe or veil.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Priority 5-day schedule</td>
+                  <td class="py-3 pr-4">₹1,600</td>
+                  <td class="py-3">Dedicated team, limited slots.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm text-gray-500 mt-4">Quotes finalized after measuring your tracing length and selecting embellishment intensity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold mb-3">Ready to design your bridal look?</h3>
+        <p class="text-gray-700 mb-6">Share blouse photos, jewelry inspo, and wedding date; we respond with sketches, timeline, and retainer details.</p>
+        <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20book%20Bridal%20Aari%20Work%20package" class="inline-flex items-center gap-3 px-7 py-3 rounded-lg text-white text-lg font-semibold" style="background:var(--cta-green)">
+          <i class="fab fa-whatsapp text-2xl"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1D0259] text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="text-white font-bold mb-3">✨ Prajus Designs</h4>
+          <p class="text-sm">Premium boutique tailoring & aari embroidery studio based in Chennai.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-[#F2E96B]" href="/services/aari-work/">Aari Work</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/services/maxi-gown/">Maxi & Gown</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/services/saree-upcycling/">Saree Upcycling</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-[#F2E96B]" href="/">Home</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/about/">About</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/aari-courses/">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Contact</h4>
+          <p class="text-sm">WhatsApp: +91 99527 49408</p>
+          <p class="text-sm">Studio: Perungalathur, Chennai</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-sm text-center">© 2025 Prajus Designs. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const gallery=document.getElementById("gallery");
+      const track=gallery?.querySelector(".flex");
+      const prev=document.getElementById("gallery-prev");
+      const next=document.getElementById("gallery-next");
+      if(!gallery||!track||!prev||!next) return;
+      let scrollPosition=0;
+      const cardWidth=track.firstElementChild?.getBoundingClientRect().width||320;
+      const step=cardWidth+24;
+      const maxScroll=Math.max(track.scrollWidth-gallery.clientWidth,0);
+      const updateScroll=()=>{ track.style.transform=`translateX(${-scrollPosition}px)`; };
+      prev.addEventListener("click",()=>{ scrollPosition=Math.max(scrollPosition-step,0); updateScroll(); });
+      next.addEventListener("click",()=>{ scrollPosition=Math.min(scrollPosition+step,maxScroll); updateScroll(); });
+      let startX=0,startScroll=0,isDragging=false;
+      gallery.addEventListener("pointerdown",e=>{ isDragging=true; startX=e.clientX; startScroll=scrollPosition; gallery.setPointerCapture(e.pointerId); });
+      gallery.addEventListener("pointermove",e=>{ if(!isDragging) return; const delta=e.clientX-startX; scrollPosition=Math.min(Math.max(startScroll-delta,0),maxScroll); updateScroll(); });
+      gallery.addEventListener("pointerup",e=>{ if(!isDragging) return; isDragging=false; gallery.releasePointerCapture(e.pointerId); });
+      gallery.addEventListener("pointerleave",()=>{ isDragging=false; });
+    })();
+  </script>
+</body>
+</html>

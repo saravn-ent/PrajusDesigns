@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saree to Kurti — Prajus Designs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --brand-purple:#500C59;
+      --brand-pink:#BF637C;
+      --price-green:#15803d;
+      --whatsapp-green:#25D366;
+    }
+    .gallery-btn { background:white; border-radius:9999px; width:40px; height:40px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(15,23,42,0.08); border:1px solid rgba(0,0,0,0.05); }
+    .img-placeholder { background:linear-gradient(180deg,#eef2ff,#dbeafe); border-radius:1rem; height:190px; width:100%; }
+    @media(max-width:640px){ .img-placeholder{ height:150px; } }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold" style="color:var(--brand-purple)">✨ Prajus Designs</a>
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 text-sm text-gray-700">
+          <li><a href="/" class="hover:text-[var(--brand-pink)]">Home</a></li>
+          <li><a href="/services/" class="hover:text-[var(--brand-pink)]">Services</a></li>
+          <li><a href="/aari-courses/" class="hover:text-[var(--brand-pink)]">Courses</a></li>
+          <li><a href="/about/" class="hover:text-[var(--brand-pink)]">About</a></li>
+        </ul>
+      </nav>
+      <button aria-label="Menu" class="md:hidden text-gray-700 text-xl"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-r from-purple-50 via-amber-50 to-pink-50 py-16">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">Saree → Kurti Transformations</h1>
+        <p class="text-lg text-gray-700">Rework any silk, organza, or chiffon saree into easy-to-wear kurtis and co-ord sets while preserving iconic borders.</p>
+      </div>
+    </section>
+
+    <section class="py-10">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold">Gallery — Kurti Concepts</h2>
+          <div class="flex gap-3">
+            <button id="gallery-prev" class="gallery-btn" aria-label="Previous"><i class="fas fa-chevron-left text-sm text-gray-700"></i></button>
+            <button id="gallery-next" class="gallery-btn" aria-label="Next"><i class="fas fa-chevron-right text-sm text-gray-700"></i></button>
+          </div>
+        </div>
+        <div id="gallery" class="overflow-hidden">
+          <div class="flex gap-6 w-max">
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" role="img" aria-label="A-line kurti placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">A-line border kurti</div>
+                <div class="text-sm text-gray-500">Pallu border as hem detail</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Overlay kurti placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Overlay jacket set</div>
+                <div class="text-sm text-gray-500">Sleeveless inner with sheer cape</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="High-low kurti placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">High-low silhouette</div>
+                <div class="text-sm text-gray-500">Contrast piping + potli buttons</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Kaftan kurti placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Kaftan kurti</div>
+                <div class="text-sm text-gray-500">Loose fit for breezy drape</div>
+              </figcaption>
+            </figure>
+            <figure class="min-w-[300px] sm:min-w-[360px] bg-white rounded-2xl p-4 border shadow-sm">
+              <div class="img-placeholder" aria-label="Panelled kurti placeholder"></div>
+              <figcaption class="mt-3">
+                <div class="font-semibold">Panelled kurti set</div>
+                <div class="text-sm text-gray-500">Border placed along princess line</div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-6 border-y">
+      <div class="max-w-5xl mx-auto px-6 grid gap-4 sm:grid-cols-3 text-sm text-gray-700">
+        <div class="bg-white border rounded-xl px-4 py-3 shadow-sm flex items-start gap-3">
+          <i class="fas fa-swatchbook text-[var(--brand-purple)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-purple)]">Border mapping</strong>
+            <p class="text-gray-600">We sketch border placement before cutting.</p>
+          </div>
+        </div>
+        <div class="bg-white border rounded-xl px-4 py-3 shadow-sm flex items-start gap-3">
+          <i class="fas fa-ruler text-[var(--brand-purple)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-purple)]">Custom measurements</strong>
+            <p class="text-gray-600">Body charts capture bust, waist, hip & armhole.</p>
+          </div>
+        </div>
+        <div class="bg-white border rounded-xl px-4 py-3 shadow-sm flex items-start gap-3">
+          <i class="fas fa-stopwatch text-[var(--brand-purple)] mt-1"></i>
+          <div>
+            <strong class="text-[var(--brand-purple)]">3–5 day delivery</strong>
+            <p class="text-gray-600">Priority slot for last-minute events.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-xl font-bold mb-4">What you get</h3>
+        <ul class="grid sm:grid-cols-2 gap-4 text-gray-700">
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Design consult to pick silhouette (straight, A-line, kaftan, co-ord) based on saree fabric fall.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Motif tracing + chalk marking to ensure zari/pallu sits perfectly on hems, yokes, or sleeves.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>Premium cotton / satin lining, neckline facing, and concealed seams for longevity.</span></li>
+          <li class="flex gap-3"><span class="text-green-600 mt-1"><i class="fas fa-check"></i></span><span>One fitting session with adjustments and steam press finish.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-12 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h3 class="text-2xl font-bold mb-4">Pricing</h3>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p class="text-sm text-gray-500">Saree to Kurti Tailoring</p>
+            <p class="text-3xl font-extrabold" style="color:var(--price-green)">₹980</p>
+          </div>
+          <p class="text-sm text-gray-600 max-w-sm">Includes design consult, cutting plan, lining, finishing, and one fitting session.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 border shadow-sm">
+          <p class="font-semibold text-gray-700 mb-4">Popular add-ons</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm table-auto border-collapse">
+              <thead>
+                <tr class="text-left text-gray-600">
+                  <th class="py-2 pr-4">Add-on</th>
+                  <th class="py-2 pr-4">Price</th>
+                  <th class="py-2">Details</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Matching pant / palazzo</td>
+                  <td class="py-3 pr-4">₹420</td>
+                  <td class="py-3">Use saree body or complementary fabric.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Hand aari yoke detailing</td>
+                  <td class="py-3 pr-4">₹280</td>
+                  <td class="py-3">Add bead or zari handwork.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Potli buttons & loops</td>
+                  <td class="py-3 pr-4">₹150</td>
+                  <td class="py-3">Fabric-covered buttons for front placket.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Detachable belt</td>
+                  <td class="py-3 pr-4">₹180</td>
+                  <td class="py-3">Creates defined waist for straight cuts.</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-4">Express 48-hr delivery</td>
+                  <td class="py-3 pr-4">₹300</td>
+                  <td class="py-3">Subject to slot availability.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-sm text-gray-500 mt-4">Pricing reference for Chennai studio. Share saree photos for an exact estimate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-14">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold mb-3">Want to try a kurti makeover?</h3>
+        <p class="text-gray-700 mb-6">Send your saree pictures + preferred sleeve length on WhatsApp. We respond with silhouette sketches and slot availability.</p>
+        <a href="https://wa.me/919952749408?text=Hi%20Prajus%20Designs,%20convert%20my%20saree%20into%20a%20kurti%20(₹980)" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg text-white text-lg font-semibold shadow" style="background:var(--whatsapp-green);">
+          <i class="fab fa-whatsapp text-2xl"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1D0259] text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="text-white font-bold mb-3">✨ Prajus Designs</h4>
+          <p class="text-sm">Premium boutique tailoring & aari embroidery studio based in Chennai.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-[#F2E96B]" href="/services/saree-upcycling/">Saree Upcycling</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/services/maxi-gown/">Maxi & Gown</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/services/aari-work/">Aari Work</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a class="hover:text-[#F2E96B]" href="/">Home</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/about/">About</a></li>
+            <li><a class="hover:text-[#F2E96B]" href="/aari-courses/">Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-3">Contact</h4>
+          <p class="text-sm">WhatsApp: +91 99527 49408</p>
+          <p class="text-sm">Studio: Perungalathur, Chennai</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 text-sm text-center">© 2025 Prajus Designs. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const gallery=document.getElementById("gallery");
+      const track=gallery?.querySelector(".flex");
+      const prev=document.getElementById("gallery-prev");
+      const next=document.getElementById("gallery-next");
+      if(!gallery||!track||!prev||!next) return;
+      let scrollPosition=0;
+      const cardWidth=track.firstElementChild?.getBoundingClientRect().width||320;
+      const step=cardWidth+24;
+      const maxScroll=Math.max(track.scrollWidth-gallery.clientWidth,0);
+      const updateScroll=()=>{ track.style.transform=`translateX(${-scrollPosition}px)`; };
+      prev.addEventListener("click",()=>{ scrollPosition=Math.max(scrollPosition-step,0); updateScroll(); });
+      next.addEventListener("click",()=>{ scrollPosition=Math.min(scrollPosition+step,maxScroll); updateScroll(); });
+      let startX=0,startScroll=0,isDown=false;
+      gallery.addEventListener("pointerdown",e=>{ isDown=true; startX=e.clientX; startScroll=scrollPosition; gallery.setPointerCapture(e.pointerId); });
+      gallery.addEventListener("pointermove",e=>{ if(!isDown) return; const delta=e.clientX-startX; scrollPosition=Math.min(Math.max(startScroll-delta,0),maxScroll); updateScroll(); });
+      gallery.addEventListener("pointerup",e=>{ isDown=false; gallery.releasePointerCapture(e.pointerId); });
+      gallery.addEventListener("pointerleave",()=>{ isDown=false; });
+    })();
+  </script>
+</body>
+</html>
