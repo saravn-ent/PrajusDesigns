@@ -19,6 +19,9 @@
   --brand-teal: var(--brand-deep);
   --brand-violet: var(--brand-deep);
   --brand-wine: var(--brand-deep);
+  --price-green: #15803d;
+  --link-purple: #7e22ce;
+  --link-purple-hover: #6b21a8;
   --whatsapp-green: var(--cta-green);
 }
 
@@ -29,13 +32,35 @@ body {
   line-height: 1.6;
 }
 
+a {
+  color: var(--link-purple);
+  transition: color 0.2s ease;
+}
+
+a:visited {
+  color: var(--link-purple);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-purple-hover);
+}
+
 /* Typography helpers */
 .text-brand {
   color: var(--brand-deep);
 }
 
+.font-extrabold.text-brand {
+  color: var(--price-green);
+}
+
 .text-muted {
   color: var(--brand-muted);
+}
+
+.text-green-600 {
+  color: var(--price-green) !important;
 }
 
 .sr-only {
@@ -411,7 +436,7 @@ body.nav-open {
 
 .service-card__meta {
   font-weight: 600;
-  color: #16a34a;
+  color: var(--price-green);
 }
 
 /* Floating CTA */

@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
-  initTranslateToggle();
 });
 
 function initNavigation() {
@@ -86,101 +85,5 @@ function initNavigation() {
     if (event.key === 'Escape') {
       closeMenu();
     }
-  });
-}
-
-let translateScriptPromise;
-
-function ensureTranslateContainer() {
-  if (document.getElementById('google_translate_container')) {
-    return;
-  }
-  const container = document.createElement('div');
-  container.id = 'google_translate_container';
-  container.className = 'hidden';
-  document.body.appendChild(container);
-}
-
-function loadGoogleTranslateScript() {
-  if (translateScriptPromise) {
-    return translateScriptPromise;
-  }
-
-  translateScriptPromise = new Promise((resolve, reject) => {
-    window.googleTranslateElementInit = () => {
-      if (!window.google || !window.google.translate) {
-        resolve();
-        return;
-      }
-
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: 'en',
-          includedLanguages: 'en,ta',
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        },
-        'google_translate_container'
-      );
-
-      document.dispatchEvent(new CustomEvent('translate:ready'));
-      resolve();
-    };
-
-    const script = document.createElement('script');
-    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    script.async = true;
-    script.onerror = reject;
-    document.head.appendChild(script);
-  });
-
-  return translateScriptPromise;
-}
-
-function initTranslateToggle() {
-  const toggles = Array.from(document.querySelectorAll('[data-translate-toggle]'));
-  if (!toggles.length) {
-    return;
-  }
-
-  let currentLang = 'en';
-  ensureTranslateContainer();
-  loadGoogleTranslateScript();
-
-  const updateLabels = (lang) => {
-    toggles.forEach((toggle) => {
-      const label = toggle.querySelector('[data-translate-label]');
-      if (label) {
-        label.textContent = lang === 'ta' ? 'தமிழ் / EN' : 'EN / தமிழ்';
-      }
-      toggle.dataset.lang = lang;
-    });
-  };
-
-  const applyLanguage = (lang) => {
-    const combo = document.querySelector('select.goog-te-combo');
-    if (!combo) {
-      return;
-    }
-    combo.value = lang === 'en' ? '' : lang;
-    combo.dispatchEvent(new Event('change'));
-    currentLang = lang;
-    updateLabels(lang);
-  };
-
-  toggles.forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-      const nextLang = currentLang === 'ta' ? 'en' : 'ta';
-      const combo = document.querySelector('select.goog-te-combo');
-      if (!combo) {
-        loadGoogleTranslateScript().then(() => applyLanguage(nextLang));
-        return;
-      }
-      applyLanguage(nextLang);
-    });
-  });
-
-  document.addEventListener('translate:ready', () => {
-    updateLabels(currentLang);
   });
 }
