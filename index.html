@@ -36,10 +36,15 @@
       <a href="/" class="flex-shrink-0" aria-label="Prajus Designs">
         <img src="/logo.webp" alt="Prajus Designs logo" class="h-12 w-auto" loading="lazy" decoding="async">
       </a>
-      <button type="button" class="lg:hidden text-gray-800 text-2xl" aria-expanded="false" aria-controls="mobile-drawer" data-nav-toggle>
-        <span class="sr-only">Toggle navigation</span>
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="flex items-center gap-4">
+        <button type="button" class="translate-toggle notranslate inline-flex items-center gap-1 px-4 py-2 rounded-lg border border-[#1D0259]/20 text-sm font-semibold text-[#1D0259] bg-white/80 hover:bg-white transition" data-translate-toggle data-lang="en">
+          <span class="notranslate" data-translate-label>EN / தமிழ்</span>
+        </button>
+        <button type="button" class="text-gray-800 text-2xl lg:hidden" aria-expanded="false" aria-controls="mobile-drawer" data-nav-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
       <ul class="hidden lg:flex items-center gap-8 text-gray-700 font-medium" data-nav-links>
         <li><a href="/" class="hover:text-[#1D0259] transition">Home</a></li>
         <li><a href="/services/" class="hover:text-[#1D0259] transition inline-flex items-center gap-1">Services <i class="fas fa-chevron-down text-[0.65rem] mt-0.5"></i></a></li>
@@ -58,6 +63,11 @@
         <a href="/services/">Services</a>
         <a href="/about/">About</a>
         <a href="/aari-courses/">Courses</a>
+      </div>
+      <div class="mobile-translate mt-4">
+        <button type="button" class="translate-toggle notranslate w-full inline-flex items-center justify-center gap-1 px-4 py-3 rounded-lg border border-[#1D0259]/20 text-sm font-semibold text-[#1D0259] bg-white/80 hover:bg-white transition" data-translate-toggle data-translate-role="mobile" data-lang="en">
+          <span class="notranslate" data-translate-label>EN / தமிழ்</span>
+        </button>
       </div>
       <div class="mobile-nav-profile">
         <div class="mobile-nav-photo-frame">
