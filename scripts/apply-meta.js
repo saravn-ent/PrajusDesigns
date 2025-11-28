@@ -6,6 +6,8 @@ const baseUrl = 'https://prajusdesigns.netlify.app';
 const siteName = 'Prajus Designs';
 const locale = 'en_IN';
 const themeColor = '#1D0259';
+const defaultOgImage = `${baseUrl}/logo.webp`;
+const defaultOgAlt = 'Prajus Designs logo mark';
 
 /** @type {Record<string, {description: string, image: string, title?: string, type?: string}>} */
 const metaConfig = {
@@ -146,14 +148,21 @@ const escapeHtml = (value = '') =>
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 
-const resolveImage = (imagePath = '') => {
-  if (!imagePath) return `${baseUrl}/aari.jpg`;
-  if (imagePath.startsWith('http')) return imagePath;
-  if (imagePath.startsWith('/')) return `${baseUrl}${imagePath}`;
-  return `${baseUrl}/${imagePath}`;
-};
-
 const toForwardSlash = (value) => value.replace(/\\/g, '/');
+
+const resolveImage = (imagePath = '') => {
+  if (!imagePath) return defaultOgImage;
+  if (imagePath.startsWith('http')) return imagePath;
+
+  const normalized = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+  const filePath = path.join(rootDir, normalized);
+  if (!fs.existsSync(filePath)) {
+    console.warn(`Image ${imagePath} not found. Falling back to ${defaultOgImage}.`);
+    return defaultOgImage;
+  }
+
+  return `${baseUrl}/${toForwardSlash(normalized)}`;
+};
 
 const walkHtmlFiles = (dir, relative = '') => {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -207,6 +216,12 @@ for (const [relativePath, options] of Object.entries(metaConfig)) {
   const escapedImage = escapeHtml(resolveImage(options.image));
   const type = options.type || 'website';
 
+  const defaultOgBlock = `
+  <meta property="og:image" content="${defaultOgImage}" data-og-default="true">
+  <meta property="og:image:secure_url" content="${defaultOgImage}" data-og-default="true">
+  <meta property="og:image:alt" content="${defaultOgAlt}" data-og-default="true">
+`;
+
   const metaBlock = `
   <meta name="description" content="${escapedDescription}">
   <link rel="canonical" href="${escapedUrl}">
@@ -217,8 +232,10 @@ for (const [relativePath, options] of Object.entries(metaConfig)) {
   <meta property="og:url" content="${escapedUrl}">
   <meta property="og:site_name" content="${siteName}">
   <meta property="og:image" content="${escapedImage}">
+  <meta property="og:image:secure_url" content="${escapedImage}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+${defaultOgBlock}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapedTitle}">
   <meta name="twitter:description" content="${escapedDescription}">
